@@ -1,0 +1,406 @@
+2023-04-22 10:57:52,673 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-22 10:58:07,061 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-22 10:58:23,773 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-22 10:58:27,251 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-22 10:58:27,251 [MainThread  ] [INFO ]  Start polling.
+2023-04-22 10:58:28,177 [MainThread  ] [ERROR]  Task exception was never retrieved
+future: <Task finished name='Task-7' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=CantParseEntities("Can't parse entities: unexpected end tag at byte offset 45")>
+Traceback (most recent call last):
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\PycharmProjects\bibinto\main.py", line 29, in start_unregistered
+    await message.answer(text)
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\types\message.py", line 430, in answer
+    return await self.bot.send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: unexpected end tag at byte offset 45
+2023-04-22 10:58:46,995 [MainThread  ] [INFO ]  Stop polling...
+2023-04-22 10:58:46,997 [MainThread  ] [WARNI]  Goodbye!
+2023-04-22 10:58:48,771 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-22 10:58:49,049 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-22 10:58:49,050 [MainThread  ] [INFO ]  Start polling.
+2023-04-22 10:59:15,941 [MainThread  ] [INFO ]  Stop polling...
+2023-04-22 10:59:15,943 [MainThread  ] [WARNI]  Goodbye!
+2023-04-22 10:59:18,057 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-22 10:59:18,335 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-22 10:59:18,336 [MainThread  ] [INFO ]  Start polling.
+2023-04-22 10:59:31,452 [MainThread  ] [INFO ]  Stop polling...
+2023-04-22 10:59:31,453 [MainThread  ] [WARNI]  Goodbye!
+2023-04-22 10:59:33,666 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-22 10:59:34,167 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-22 10:59:34,167 [MainThread  ] [INFO ]  Start polling.
+2023-04-22 10:59:44,300 [MainThread  ] [ERROR]  Can't parse entities: can't find end tag corresponding to start tag code
+Traceback (most recent call last):
+  File "C:\Users\coolg\PycharmProjects\bibinto\main.py", line 44, in registration_name
+    return await message.answer(text)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\types\message.py", line 430, in answer
+    return await self.bot.send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: can't find end tag corresponding to start tag code
+2023-04-22 11:00:15,828 [MainThread  ] [INFO ]  Stop polling...
+2023-04-22 11:00:15,828 [MainThread  ] [WARNI]  Goodbye!
+2023-04-22 11:00:18,247 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-22 11:00:18,766 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-22 11:00:18,766 [MainThread  ] [INFO ]  Start polling.
+2023-04-22 11:00:26,419 [MainThread  ] [ERROR]  Unsupported parse_mode
+Traceback (most recent call last):
+  File "C:\Users\coolg\PycharmProjects\bibinto\main.py", line 59, in registration_age
+    return await message.answer(text, kb)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\types\message.py", line 430, in answer
+    return await self.bot.send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Unsupported parse_mode
+2023-04-22 11:00:49,374 [MainThread  ] [INFO ]  Stop polling...
+2023-04-22 11:00:49,375 [MainThread  ] [WARNI]  Goodbye!
+2023-04-22 11:00:51,365 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-22 11:00:52,506 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-22 11:00:52,506 [MainThread  ] [INFO ]  Start polling.
+2023-04-22 11:01:00,756 [MainThread  ] [ERROR]  Task exception was never retrieved
+future: <Task finished name='Task-21' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=AttributeError("'CallbackQuery' object has no attribute 'chat'")>
+Traceback (most recent call last):
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 108, in notify
+    data.update(await check_filters(handler_obj.filters, args))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\filters\filters.py", line 77, in check_filters
+    f = await execute_filter(filter_, args)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\filters\filters.py", line 63, in execute_filter
+    return filter_.filter(*args, **filter_.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\PycharmProjects\bibinto\filters.py", line 16, in <lambda>
+    return lambda message: not self.db.get_user(user_id=message.chat.id)
+                                                        ^^^^^^^^^^^^
+AttributeError: 'CallbackQuery' object has no attribute 'chat'
+2023-04-22 11:01:31,606 [MainThread  ] [INFO ]  Stop polling...
+2023-04-22 11:01:31,607 [MainThread  ] [WARNI]  Goodbye!
+2023-04-22 11:01:33,853 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-22 11:01:35,145 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-22 11:01:35,146 [MainThread  ] [INFO ]  Start polling.
+2023-04-22 11:01:43,408 [MainThread  ] [ERROR]  Message identifier is not specified
+Traceback (most recent call last):
+  File "C:\Users\coolg\PycharmProjects\bibinto\main.py", line 77, in skip_city
+    return await app.edit_message_text(text, reply_markup=None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\bot.py", line 3096, in edit_message_text
+    result = await self.request(api.Methods.EDIT_MESSAGE_TEXT, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageIdentifierNotSpecified: Message identifier is not specified
+2023-04-22 11:01:43,481 [MainThread  ] [ERROR]  Task exception was never retrieved
+future: <Task finished name='Task-21' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=MessageIdentifierNotSpecified('Message identifier is not specified')>
+Traceback (most recent call last):
+  File "C:\Users\coolg\PycharmProjects\bibinto\main.py", line 77, in skip_city
+    return await app.edit_message_text(text, reply_markup=None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\bot.py", line 3096, in edit_message_text
+    result = await self.request(api.Methods.EDIT_MESSAGE_TEXT, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageIdentifierNotSpecified: Message identifier is not specified
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\PycharmProjects\bibinto\main.py", line 83, in skip_city
+    return await app.edit_message_text(text, reply_markup=None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\bot.py", line 3096, in edit_message_text
+    result = await self.request(api.Methods.EDIT_MESSAGE_TEXT, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageIdentifierNotSpecified: Message identifier is not specified
+2023-04-22 11:02:09,963 [MainThread  ] [INFO ]  Stop polling...
+2023-04-22 11:02:09,964 [MainThread  ] [WARNI]  Goodbye!
+2023-04-22 11:02:12,153 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-22 11:02:13,018 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-22 11:02:13,019 [MainThread  ] [INFO ]  Start polling.
+2023-04-22 11:02:22,392 [MainThread  ] [ERROR]  Chat not found
+Traceback (most recent call last):
+  File "C:\Users\coolg\PycharmProjects\bibinto\main.py", line 77, in skip_city
+    return await app.edit_message_text(query.message.chat.id, query.message.message_id, text, reply_markup=None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\bot.py", line 3096, in edit_message_text
+    result = await self.request(api.Methods.EDIT_MESSAGE_TEXT, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.ChatNotFound: Chat not found
+2023-04-22 11:02:23,834 [MainThread  ] [ERROR]  Task exception was never retrieved
+future: <Task finished name='Task-21' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=ChatNotFound('Chat not found')>
+Traceback (most recent call last):
+  File "C:\Users\coolg\PycharmProjects\bibinto\main.py", line 77, in skip_city
+    return await app.edit_message_text(query.message.chat.id, query.message.message_id, text, reply_markup=None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\bot.py", line 3096, in edit_message_text
+    result = await self.request(api.Methods.EDIT_MESSAGE_TEXT, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.ChatNotFound: Chat not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\PycharmProjects\bibinto\main.py", line 83, in skip_city
+    return await app.edit_message_text(query.message.chat.id, query.message.message_id, text, reply_markup=None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\bot.py", line 3096, in edit_message_text
+    result = await self.request(api.Methods.EDIT_MESSAGE_TEXT, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.ChatNotFound: Chat not found
+2023-04-22 11:03:02,538 [MainThread  ] [INFO ]  Stop polling...
+2023-04-22 11:03:02,539 [MainThread  ] [WARNI]  Goodbye!
+2023-04-22 11:03:04,652 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-22 11:03:07,646 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-22 11:03:07,646 [MainThread  ] [INFO ]  Start polling.
+2023-04-22 11:04:17,016 [MainThread  ] [ERROR]  Task exception was never retrieved
+future: <Task finished name='Task-27' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=AttributeError("'Message' object has no attribute 'message'")>
+Traceback (most recent call last):
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 108, in notify
+    data.update(await check_filters(handler_obj.filters, args))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\filters\filters.py", line 77, in check_filters
+    f = await execute_filter(filter_, args)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\filters\filters.py", line 63, in execute_filter
+    return filter_.filter(*args, **filter_.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\PycharmProjects\bibinto\filters.py", line 28, in <lambda>
+    return lambda query: query.message.chat.type == 'private'
+                         ^^^^^^^^^^^^^
+AttributeError: 'Message' object has no attribute 'message'
+2023-04-22 11:04:40,857 [MainThread  ] [INFO ]  Stop polling...
+2023-04-22 11:04:40,858 [MainThread  ] [WARNI]  Goodbye!
+2023-04-22 11:04:43,612 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-22 11:04:45,300 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-22 11:04:45,301 [MainThread  ] [INFO ]  Start polling.
+2023-04-22 11:05:21,312 [MainThread  ] [INFO ]  Stop polling...
+2023-04-22 11:05:21,312 [MainThread  ] [WARNI]  Goodbye!
+2023-04-22 11:05:23,517 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-22 11:05:23,819 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-22 11:05:23,821 [MainThread  ] [INFO ]  Start polling.
+2023-04-22 11:05:39,290 [MainThread  ] [ERROR]  Task exception was never retrieved
+future: <Task finished name='Task-24' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=AttributeError("'Message' object has no attribute 'message'")>
+Traceback (most recent call last):
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 108, in notify
+    data.update(await check_filters(handler_obj.filters, args))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\filters\filters.py", line 77, in check_filters
+    f = await execute_filter(filter_, args)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\filters\filters.py", line 63, in execute_filter
+    return filter_.filter(*args, **filter_.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\PycharmProjects\bibinto\filters.py", line 28, in <lambda>
+    return lambda query: query.message.chat.type == 'private'
+                         ^^^^^^^^^^^^^
+AttributeError: 'Message' object has no attribute 'message'
+2023-04-22 11:06:18,236 [MainThread  ] [INFO ]  Stop polling...
+2023-04-22 11:06:18,237 [MainThread  ] [WARNI]  Goodbye!
+2023-04-22 11:06:20,425 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-22 11:06:21,029 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-22 11:06:21,029 [MainThread  ] [INFO ]  Start polling.
+2023-04-22 11:06:33,548 [MainThread  ] [ERROR]  table users has no column named age
+Traceback (most recent call last):
+  File "C:\Users\coolg\PycharmProjects\bibinto\main.py", line 107, in registration_photo
+    db.add_user(**(await state.get_data()))
+  File "C:\Users\coolg\PycharmProjects\bibinto\database.py", line 50, in add_user
+    self.cursor.execute(query, args)
+sqlite3.OperationalError: table users has no column named age
+2023-04-22 11:06:45,263 [MainThread  ] [INFO ]  Stop polling...
+2023-04-22 11:06:45,266 [MainThread  ] [WARNI]  Goodbye!
+2023-04-22 11:06:47,548 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-22 11:06:47,856 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-22 11:06:47,857 [MainThread  ] [INFO ]  Start polling.
+2023-04-22 11:06:59,047 [MainThread  ] [ERROR]  NOT NULL constraint failed: users.user_id
+Traceback (most recent call last):
+  File "C:\Users\coolg\PycharmProjects\bibinto\main.py", line 107, in registration_photo
+    db.add_user(**(await state.get_data()))
+  File "C:\Users\coolg\PycharmProjects\bibinto\database.py", line 50, in add_user
+    self.cursor.execute(query, args)
+sqlite3.IntegrityError: NOT NULL constraint failed: users.user_id
+2023-04-22 11:07:43,388 [MainThread  ] [INFO ]  Stop polling...
+2023-04-22 11:07:43,390 [MainThread  ] [WARNI]  Goodbye!
+2023-04-22 11:07:45,373 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-22 11:07:45,594 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-22 11:07:45,594 [MainThread  ] [INFO ]  Start polling.
+2023-04-22 11:09:02,337 [MainThread  ] [INFO ]  Stop polling...
+2023-04-22 11:09:02,338 [MainThread  ] [WARNI]  Goodbye!
+2023-04-22 11:09:07,099 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-22 11:09:08,042 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-22 11:09:08,042 [MainThread  ] [INFO ]  Start polling.
+2023-04-22 11:09:20,232 [MainThread  ] [INFO ]  Stop polling...
+2023-04-22 11:09:20,233 [MainThread  ] [WARNI]  Goodbye!
