@@ -404,3 +404,971 @@ sqlite3.IntegrityError: NOT NULL constraint failed: users.user_id
 2023-04-22 11:09:08,042 [MainThread  ] [INFO ]  Start polling.
 2023-04-22 11:09:20,232 [MainThread  ] [INFO ]  Stop polling...
 2023-04-22 11:09:20,233 [MainThread  ] [WARNI]  Goodbye!
+2023-04-22 18:07:01,077 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-22 18:07:01,337 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-22 18:07:01,337 [MainThread  ] [INFO ]  Start polling.
+2023-04-22 18:07:08,534 [MainThread  ] [ERROR]  Task exception was never retrieved
+future: <Task finished name='Task-7' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=TypeError('models.user.UserModel() argument after ** must be a mapping, not tuple')>
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\handler.py", line 107, in notify
+    data.update(await check_filters(handler_obj.filters, args))
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\filters\filters.py", line 72, in check_filters
+    f = await execute_filter(filter_, args)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\filters\filters.py", line 58, in execute_filter
+    return filter_.filter(*args, **filter_.kwargs)
+  File "D:\PythonProjects\BibintoCloneBot\filters.py", line 16, in <lambda>
+    return lambda message: not self.db.get_user(user_id=message.chat.id)
+  File "D:\PythonProjects\BibintoCloneBot\database.py", line 40, in get_user
+    return UserModel(self.adapter, **self.cursor.fetchone())
+TypeError: models.user.UserModel() argument after ** must be a mapping, not tuple
+2023-04-22 18:09:05,752 [MainThread  ] [INFO ]  Stop polling...
+2023-04-22 18:09:05,752 [MainThread  ] [WARNI]  Goodbye!
+2023-04-22 18:09:11,436 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-22 18:09:11,618 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-22 18:09:11,618 [MainThread  ] [INFO ]  Start polling.
+2023-04-22 18:09:17,371 [MainThread  ] [ERROR]  'UserModel' object has no attribute '_UserModel__id'
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 53, in start_marking
+    likes = db.get_likes(from_user=user.id)
+  File "D:\PythonProjects\BibintoCloneBot\models\user.py", line 59, in id
+    return self.__id
+AttributeError: 'UserModel' object has no attribute '_UserModel__id'
+2023-04-22 18:10:07,540 [MainThread  ] [INFO ]  Stop polling...
+2023-04-22 18:10:07,540 [MainThread  ] [WARNI]  Goodbye!
+2023-04-22 18:10:11,917 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-22 18:10:12,089 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-22 18:10:12,089 [MainThread  ] [INFO ]  Start polling.
+2023-04-22 18:10:13,941 [MainThread  ] [ERROR]  'UserModel' object has no attribute '_UserModel__id'
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 53, in start_marking
+    likes = db.get_likes(from_user=user.id)
+  File "D:\PythonProjects\BibintoCloneBot\models\user.py", line 59, in id
+    return self.__id
+AttributeError: 'UserModel' object has no attribute '_UserModel__id'
+2023-04-22 18:10:34,747 [MainThread  ] [INFO ]  Stop polling...
+2023-04-22 18:10:34,747 [MainThread  ] [WARNI]  Goodbye!
+2023-04-22 18:10:40,022 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-22 18:10:40,217 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-22 18:10:40,217 [MainThread  ] [INFO ]  Start polling.
+2023-04-22 18:10:43,081 [MainThread  ] [ERROR]  Task exception was never retrieved
+future: <Task finished name='Task-7' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=RecursionError('maximum recursion depth exceeded while getting the repr of an object')>
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\handler.py", line 107, in notify
+    data.update(await check_filters(handler_obj.filters, args))
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\filters\filters.py", line 72, in check_filters
+    f = await execute_filter(filter_, args)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\filters\filters.py", line 58, in execute_filter
+    return filter_.filter(*args, **filter_.kwargs)
+  File "D:\PythonProjects\BibintoCloneBot\filters.py", line 13, in <lambda>
+    return lambda message: self.db.get_user(user_id=message.chat.id)
+  File "D:\PythonProjects\BibintoCloneBot\database.py", line 45, in get_user
+    return UserModel(self.adapter, **self.cursor.fetchone())
+  File "D:\PythonProjects\BibintoCloneBot\models\user.py", line 25, in __init__
+    print(self.__dict__)
+  File "D:\PythonProjects\BibintoCloneBot\models\base.py", line 12, in __repr__
+    return f"{self.__class__.__name__} -> {self.data}"
+  File "D:\PythonProjects\BibintoCloneBot\models\base.py", line 12, in __repr__
+    return f"{self.__class__.__name__} -> {self.data}"
+  File "D:\PythonProjects\BibintoCloneBot\models\base.py", line 12, in __repr__
+    return f"{self.__class__.__name__} -> {self.data}"
+  [Previous line repeated 242 more times]
+RecursionError: maximum recursion depth exceeded while getting the repr of an object
+2023-04-22 18:11:01,769 [MainThread  ] [INFO ]  Stop polling...
+2023-04-22 18:11:01,770 [MainThread  ] [WARNI]  Goodbye!
+2023-04-22 18:11:09,823 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-22 18:11:09,987 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-22 18:11:09,987 [MainThread  ] [INFO ]  Start polling.
+2023-04-22 18:11:10,086 [MainThread  ] [ERROR]  Task exception was never retrieved
+future: <Task finished name='Task-7' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=AttributeError("'UserModel' object has no attribute '_UserModel__age'")>
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\handler.py", line 107, in notify
+    data.update(await check_filters(handler_obj.filters, args))
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\filters\filters.py", line 72, in check_filters
+    f = await execute_filter(filter_, args)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\filters\filters.py", line 58, in execute_filter
+    return filter_.filter(*args, **filter_.kwargs)
+  File "D:\PythonProjects\BibintoCloneBot\filters.py", line 13, in <lambda>
+    return lambda message: self.db.get_user(user_id=message.chat.id)
+  File "D:\PythonProjects\BibintoCloneBot\database.py", line 45, in get_user
+    return UserModel(self.adapter, **self.cursor.fetchone())
+  File "D:\PythonProjects\BibintoCloneBot\models\user.py", line 25, in __init__
+    print(self.__age)
+AttributeError: 'UserModel' object has no attribute '_UserModel__age'
+2023-04-22 18:11:11,104 [MainThread  ] [ERROR]  Task exception was never retrieved
+future: <Task finished name='Task-10' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=AttributeError("'UserModel' object has no attribute '_UserModel__age'")>
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\handler.py", line 107, in notify
+    data.update(await check_filters(handler_obj.filters, args))
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\filters\filters.py", line 72, in check_filters
+    f = await execute_filter(filter_, args)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\filters\filters.py", line 58, in execute_filter
+    return filter_.filter(*args, **filter_.kwargs)
+  File "D:\PythonProjects\BibintoCloneBot\filters.py", line 13, in <lambda>
+    return lambda message: self.db.get_user(user_id=message.chat.id)
+  File "D:\PythonProjects\BibintoCloneBot\database.py", line 45, in get_user
+    return UserModel(self.adapter, **self.cursor.fetchone())
+  File "D:\PythonProjects\BibintoCloneBot\models\user.py", line 25, in __init__
+    print(self.__age)
+AttributeError: 'UserModel' object has no attribute '_UserModel__age'
+2023-04-22 18:11:45,080 [MainThread  ] [INFO ]  Stop polling...
+2023-04-22 18:11:45,080 [MainThread  ] [WARNI]  Goodbye!
+2023-04-22 18:11:49,454 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-22 18:11:49,652 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-22 18:11:49,652 [MainThread  ] [INFO ]  Start polling.
+2023-04-22 18:11:51,204 [MainThread  ] [ERROR]  list index out of range
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 55, in start_marking
+    user_data = db.next_user(to_user)
+  File "D:\PythonProjects\BibintoCloneBot\database.py", line 83, in next_user
+    return users[0]
+IndexError: list index out of range
+2023-04-22 18:13:13,055 [MainThread  ] [INFO ]  Stop polling...
+2023-04-22 18:13:13,056 [MainThread  ] [WARNI]  Goodbye!
+2023-04-22 18:13:32,115 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-22 18:13:32,292 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-22 18:13:32,292 [MainThread  ] [INFO ]  Start polling.
+2023-04-22 18:13:33,929 [MainThread  ] [ERROR]  list index out of range
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 55, in start_marking
+    user_data = db.next_user(to_user)
+  File "D:\PythonProjects\BibintoCloneBot\database.py", line 83, in next_user
+    return users[0]
+IndexError: list index out of range
+2023-04-22 18:14:28,353 [MainThread  ] [INFO ]  Stop polling...
+2023-04-22 18:14:28,353 [MainThread  ] [WARNI]  Goodbye!
+2023-04-22 18:14:32,856 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-22 18:14:33,048 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-22 18:14:33,048 [MainThread  ] [INFO ]  Start polling.
+2023-04-22 18:14:35,245 [MainThread  ] [ERROR]  'list' object has no attribute 'name'
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 57, in start_marking
+    text = f'👤 <b>{user_data.name.first_name}, {user_data.city}</b>\n\n<b>Возраст</b>: <code>{user_data.age.years} лет</code>'
+AttributeError: 'list' object has no attribute 'name'
+2023-04-22 18:20:38,568 [MainThread  ] [INFO ]  Stop polling...
+2023-04-22 18:20:38,568 [MainThread  ] [WARNI]  Goodbye!
+2023-04-22 18:20:39,664 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-22 18:20:39,892 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-22 18:20:39,892 [MainThread  ] [INFO ]  Start polling.
+2023-04-22 18:22:57,005 [MainThread  ] [INFO ]  Stop polling...
+2023-04-22 18:22:57,005 [MainThread  ] [WARNI]  Goodbye!
+2023-04-22 18:23:01,484 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-22 18:23:01,649 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-22 18:23:01,649 [MainThread  ] [INFO ]  Start polling.
+2023-04-22 18:23:03,433 [MainThread  ] [ERROR]  There is no photo in the request
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 63, in start_marking
+    return await app.send_photo(message.chat.id, photo, caption=text, reply_markup=kb)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 540, in send_photo
+    result = await self.request(api.Methods.SEND_PHOTO, payload, files)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: There is no photo in the request
+2023-04-22 18:23:03,688 [MainThread  ] [ERROR]  There is no photo in the request
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 63, in start_marking
+    return await app.send_photo(message.chat.id, photo, caption=text, reply_markup=kb)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 540, in send_photo
+    result = await self.request(api.Methods.SEND_PHOTO, payload, files)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: There is no photo in the request
+2023-04-22 18:23:21,548 [MainThread  ] [INFO ]  Stop polling...
+2023-04-22 18:23:21,548 [MainThread  ] [WARNI]  Goodbye!
+2023-04-22 18:23:22,678 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-22 18:23:22,849 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-22 18:23:22,849 [MainThread  ] [INFO ]  Start polling.
+2023-04-22 18:23:25,364 [MainThread  ] [ERROR]  Task exception was never retrieved
+future: <Task finished name='Task-7' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=TypeError('models.user.UserModel() argument after ** must be a mapping, not NoneType')>
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\handler.py", line 107, in notify
+    data.update(await check_filters(handler_obj.filters, args))
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\filters\filters.py", line 72, in check_filters
+    f = await execute_filter(filter_, args)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\filters\filters.py", line 58, in execute_filter
+    return filter_.filter(*args, **filter_.kwargs)
+  File "D:\PythonProjects\BibintoCloneBot\filters.py", line 16, in <lambda>
+    return lambda message: not self.db.get_user(user_id=message.chat.id)
+  File "D:\PythonProjects\BibintoCloneBot\database.py", line 45, in get_user
+    return UserModel(self.adapter, **self.cursor.fetchone())
+TypeError: models.user.UserModel() argument after ** must be a mapping, not NoneType
+2023-04-22 18:25:20,287 [MainThread  ] [INFO ]  Stop polling...
+2023-04-22 18:25:20,287 [MainThread  ] [WARNI]  Goodbye!
+2023-04-22 18:25:25,159 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-22 18:25:25,346 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-22 18:25:25,347 [MainThread  ] [INFO ]  Start polling.
+2023-04-22 18:26:27,370 [MainThread  ] [INFO ]  Stop polling...
+2023-04-22 18:26:27,371 [MainThread  ] [WARNI]  Goodbye!
+2023-04-22 18:26:30,163 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-22 18:26:30,356 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-22 18:26:30,356 [MainThread  ] [INFO ]  Start polling.
+2023-04-22 18:26:33,212 [MainThread  ] [ERROR]  There is no photo in the request
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 63, in start_marking
+    return await app.send_photo(message.chat.id, photo, caption=text, reply_markup=kb)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 540, in send_photo
+    result = await self.request(api.Methods.SEND_PHOTO, payload, files)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: There is no photo in the request
+2023-04-22 18:28:12,900 [MainThread  ] [INFO ]  Stop polling...
+2023-04-22 18:28:12,900 [MainThread  ] [WARNI]  Goodbye!
+2023-04-22 18:28:14,002 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-22 18:28:14,178 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-22 18:28:14,178 [MainThread  ] [INFO ]  Start polling.
+2023-04-22 18:28:15,120 [MainThread  ] [ERROR]  There is no photo in the request
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 64, in start_marking
+    return await app.send_photo(message.chat.id, photo, caption=text, reply_markup=kb)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 540, in send_photo
+    result = await self.request(api.Methods.SEND_PHOTO, payload, files)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: There is no photo in the request
+2023-04-22 18:28:44,348 [MainThread  ] [INFO ]  Stop polling...
+2023-04-22 18:28:44,349 [MainThread  ] [WARNI]  Goodbye!
+2023-04-22 18:29:02,181 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-22 18:29:02,352 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-22 18:29:02,353 [MainThread  ] [INFO ]  Start polling.
+2023-04-22 18:29:02,455 [MainThread  ] [ERROR]  Task exception was never retrieved
+future: <Task finished name='Task-7' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=AttributeError("can't set attribute")>
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\handler.py", line 107, in notify
+    data.update(await check_filters(handler_obj.filters, args))
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\filters\filters.py", line 72, in check_filters
+    f = await execute_filter(filter_, args)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\filters\filters.py", line 58, in execute_filter
+    return filter_.filter(*args, **filter_.kwargs)
+  File "D:\PythonProjects\BibintoCloneBot\filters.py", line 13, in <lambda>
+    return lambda message: self.db.get_user(user_id=message.chat.id)
+  File "D:\PythonProjects\BibintoCloneBot\database.py", line 47, in get_user
+    return UserModel(self.adapter, **data)
+  File "D:\PythonProjects\BibintoCloneBot\models\user.py", line 23, in __init__
+    setattr(self, f"{key}", val)
+AttributeError: can't set attribute
+2023-04-22 18:32:38,214 [MainThread  ] [INFO ]  Stop polling...
+2023-04-22 18:32:38,215 [MainThread  ] [WARNI]  Goodbye!
+2023-04-22 18:32:42,206 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-22 18:32:42,481 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-22 18:32:42,482 [MainThread  ] [INFO ]  Start polling.
+2023-04-22 18:32:44,495 [MainThread  ] [ERROR]  There is no photo in the request
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 64, in start_marking
+    return await app.send_photo(message.chat.id, photo, caption=text, reply_markup=kb)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 540, in send_photo
+    result = await self.request(api.Methods.SEND_PHOTO, payload, files)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: There is no photo in the request
+2023-04-22 18:33:03,229 [MainThread  ] [INFO ]  Stop polling...
+2023-04-22 18:33:03,229 [MainThread  ] [WARNI]  Goodbye!
+2023-04-22 18:33:07,638 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-22 18:33:07,858 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-22 18:33:07,859 [MainThread  ] [INFO ]  Start polling.
+2023-04-22 18:33:14,218 [MainThread  ] [ERROR]  There is no photo in the request
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 64, in start_marking
+    return await app.send_photo(message.chat.id, photo, caption=text, reply_markup=kb)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 540, in send_photo
+    result = await self.request(api.Methods.SEND_PHOTO, payload, files)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: There is no photo in the request
+2023-04-22 18:33:31,602 [MainThread  ] [INFO ]  Stop polling...
+2023-04-22 18:33:31,603 [MainThread  ] [WARNI]  Goodbye!
+2023-04-22 18:34:01,495 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-22 18:34:01,678 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-22 18:34:01,678 [MainThread  ] [INFO ]  Start polling.
+2023-04-22 18:34:03,311 [MainThread  ] [ERROR]  Task exception was never retrieved
+future: <Task finished name='Task-7' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=RecursionError('maximum recursion depth exceeded while getting the repr of an object')>
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\handler.py", line 107, in notify
+    data.update(await check_filters(handler_obj.filters, args))
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\filters\filters.py", line 72, in check_filters
+    f = await execute_filter(filter_, args)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\filters\filters.py", line 58, in execute_filter
+    return filter_.filter(*args, **filter_.kwargs)
+  File "D:\PythonProjects\BibintoCloneBot\filters.py", line 13, in <lambda>
+    return lambda message: self.db.get_user(user_id=message.chat.id)
+  File "D:\PythonProjects\BibintoCloneBot\database.py", line 47, in get_user
+    return UserModel(self.adapter, **data)
+  File "D:\PythonProjects\BibintoCloneBot\models\user.py", line 22, in __init__
+    print(self.__dict__)
+  File "D:\PythonProjects\BibintoCloneBot\models\base.py", line 12, in __repr__
+    return f"{self.__class__.__name__} -> {self.data}"
+  File "D:\PythonProjects\BibintoCloneBot\models\base.py", line 12, in __repr__
+    return f"{self.__class__.__name__} -> {self.data}"
+  File "D:\PythonProjects\BibintoCloneBot\models\base.py", line 12, in __repr__
+    return f"{self.__class__.__name__} -> {self.data}"
+  [Previous line repeated 242 more times]
+RecursionError: maximum recursion depth exceeded while getting the repr of an object
+2023-04-22 18:34:35,468 [MainThread  ] [INFO ]  Stop polling...
+2023-04-22 18:34:35,468 [MainThread  ] [WARNI]  Goodbye!
+2023-04-22 18:34:51,897 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-22 18:34:52,084 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-22 18:34:52,084 [MainThread  ] [INFO ]  Start polling.
+2023-04-22 18:34:53,844 [MainThread  ] [ERROR]  There is no photo in the request
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 64, in start_marking
+    return await app.send_photo(message.chat.id, photo, caption=text, reply_markup=kb)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 540, in send_photo
+    result = await self.request(api.Methods.SEND_PHOTO, payload, files)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: There is no photo in the request
+2023-04-22 18:35:37,547 [MainThread  ] [INFO ]  Stop polling...
+2023-04-22 18:35:37,547 [MainThread  ] [WARNI]  Goodbye!
+2023-04-22 18:35:39,786 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-22 18:35:39,955 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-22 18:35:39,955 [MainThread  ] [INFO ]  Start polling.
+2023-04-22 18:35:42,018 [MainThread  ] [ERROR]  There is no photo in the request
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 64, in start_marking
+    return await app.send_photo(message.chat.id, photo, caption=text, reply_markup=kb)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 540, in send_photo
+    result = await self.request(api.Methods.SEND_PHOTO, payload, files)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: There is no photo in the request
+2023-04-22 18:36:09,724 [MainThread  ] [INFO ]  Stop polling...
+2023-04-22 18:36:09,724 [MainThread  ] [WARNI]  Goodbye!
+2023-04-22 18:36:11,044 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-22 18:36:11,220 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-22 18:36:11,220 [MainThread  ] [INFO ]  Start polling.
+2023-04-22 18:36:24,857 [MainThread  ] [ERROR]  Can't parse entities: unsupported start tag "bound" at byte offset 21
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 189, in add_mark
+    return await app.send_photo(query.message.chat.id, photo, caption=text, reply_markup=kb)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 540, in send_photo
+    result = await self.request(api.Methods.SEND_PHOTO, payload, files)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: unsupported start tag "bound" at byte offset 21
+2023-04-22 18:36:24,914 [MainThread  ] [ERROR]  Task exception was never retrieved
+future: <Task finished name='Task-12' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=BadRequest('There is no text in the message to edit')>
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 189, in add_mark
+    return await app.send_photo(query.message.chat.id, photo, caption=text, reply_markup=kb)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 540, in send_photo
+    result = await self.request(api.Methods.SEND_PHOTO, payload, files)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: unsupported start tag "bound" at byte offset 21
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 194, in add_mark
+    return await app.edit_message_text(text, chat_id=query.message.chat.id, message_id=query.message.message_id)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 2772, in edit_message_text
+    result = await self.request(api.Methods.EDIT_MESSAGE_TEXT, payload)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: There is no text in the message to edit
+2023-04-22 18:37:03,168 [MainThread  ] [INFO ]  Stop polling...
+2023-04-22 18:37:03,169 [MainThread  ] [WARNI]  Goodbye!
+2023-04-22 18:38:27,775 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-22 18:38:27,952 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-22 18:38:27,953 [MainThread  ] [INFO ]  Start polling.
+2023-04-22 18:39:13,960 [MainThread  ] [INFO ]  Stop polling...
+2023-04-22 18:39:13,961 [MainThread  ] [WARNI]  Goodbye!
+2023-04-22 18:39:15,135 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-22 18:39:15,334 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-22 18:39:15,334 [MainThread  ] [INFO ]  Start polling.
+2023-04-22 18:39:19,412 [MainThread  ] [ERROR]  Can't parse entities: unsupported start tag "bound" at byte offset 21
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 189, in add_mark
+    return await app.send_photo(query.message.chat.id, photo, caption=text, reply_markup=kb)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 540, in send_photo
+    result = await self.request(api.Methods.SEND_PHOTO, payload, files)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: unsupported start tag "bound" at byte offset 21
+2023-04-22 18:39:19,471 [MainThread  ] [ERROR]  Task exception was never retrieved
+future: <Task finished name='Task-16' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=BadRequest('There is no text in the message to edit')>
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 189, in add_mark
+    return await app.send_photo(query.message.chat.id, photo, caption=text, reply_markup=kb)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 540, in send_photo
+    result = await self.request(api.Methods.SEND_PHOTO, payload, files)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: unsupported start tag "bound" at byte offset 21
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 194, in add_mark
+    return await app.edit_message_text(text, chat_id=query.message.chat.id, message_id=query.message.message_id)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 2772, in edit_message_text
+    result = await self.request(api.Methods.EDIT_MESSAGE_TEXT, payload)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: There is no text in the message to edit
+2023-04-22 18:40:58,851 [MainThread  ] [INFO ]  Stop polling...
+2023-04-22 18:40:58,851 [MainThread  ] [WARNI]  Goodbye!
+2023-04-22 18:41:00,560 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-22 18:41:00,793 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-22 18:41:00,793 [MainThread  ] [INFO ]  Start polling.
+2023-04-22 18:41:02,373 [MainThread  ] [ERROR]  models.user.UserModel() argument after ** must be a mapping, not UserModel
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 54, in start_marking
+    to_user = likes[-1].to_user if likes else 0
+  File "D:\PythonProjects\BibintoCloneBot\models\like.py", line 26, in to_user
+    return UserModel(**self.__database_adapter.get_user(id=self.__to_user))
+TypeError: models.user.UserModel() argument after ** must be a mapping, not UserModel
+2023-04-22 18:42:55,483 [MainThread  ] [INFO ]  Stop polling...
+2023-04-22 18:42:55,484 [MainThread  ] [WARNI]  Goodbye!
+2023-04-22 19:48:19,858 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-22 19:48:20,105 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-22 19:48:20,105 [MainThread  ] [INFO ]  Start polling.
+2023-04-22 19:48:26,890 [MainThread  ] [ERROR]  models.user.UserModel() argument after ** must be a mapping, not UserModel
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 54, in start_marking
+    to_user = likes[-1].to_user if likes else 0
+  File "D:\PythonProjects\BibintoCloneBot\models\like.py", line 26, in to_user
+    return UserModel(**self.__database_adapter.get_user(id=self.__to_user))
+TypeError: models.user.UserModel() argument after ** must be a mapping, not UserModel
+2023-04-22 19:52:07,169 [MainThread  ] [INFO ]  Stop polling...
+2023-04-22 19:52:07,170 [MainThread  ] [WARNI]  Goodbye!
+2023-04-22 19:52:08,383 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-22 19:52:08,550 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-22 19:52:08,550 [MainThread  ] [INFO ]  Start polling.
+2023-04-22 19:52:11,762 [MainThread  ] [ERROR]  Can't parse entities: unsupported start tag "bound" at byte offset 21
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 189, in add_mark
+    return await app.send_photo(query.message.chat.id, photo, caption=text, reply_markup=kb)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 540, in send_photo
+    result = await self.request(api.Methods.SEND_PHOTO, payload, files)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: unsupported start tag "bound" at byte offset 21
+2023-04-22 19:52:11,819 [MainThread  ] [ERROR]  Task exception was never retrieved
+future: <Task finished name='Task-12' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=BadRequest('There is no text in the message to edit')>
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 189, in add_mark
+    return await app.send_photo(query.message.chat.id, photo, caption=text, reply_markup=kb)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 540, in send_photo
+    result = await self.request(api.Methods.SEND_PHOTO, payload, files)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: unsupported start tag "bound" at byte offset 21
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 194, in add_mark
+    return await app.edit_message_text(text, chat_id=query.message.chat.id, message_id=query.message.message_id)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 2772, in edit_message_text
+    result = await self.request(api.Methods.EDIT_MESSAGE_TEXT, payload)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: There is no text in the message to edit
+2023-04-22 19:52:57,012 [MainThread  ] [ERROR]  Can't parse entities: unsupported start tag "bound" at byte offset 21
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 189, in add_mark
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 540, in send_photo
+    result = await self.request(api.Methods.SEND_PHOTO, payload, files)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: unsupported start tag "bound" at byte offset 21
+2023-04-22 19:52:57,066 [MainThread  ] [ERROR]  Task exception was never retrieved
+future: <Task finished name='Task-23' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=BadRequest('There is no text in the message to edit')>
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 189, in add_mark
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 540, in send_photo
+    result = await self.request(api.Methods.SEND_PHOTO, payload, files)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: unsupported start tag "bound" at byte offset 21
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 194, in add_mark
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 2772, in edit_message_text
+    result = await self.request(api.Methods.EDIT_MESSAGE_TEXT, payload)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: There is no text in the message to edit
+2023-04-22 19:55:45,867 [MainThread  ] [INFO ]  Stop polling...
+2023-04-22 19:55:45,867 [MainThread  ] [WARNI]  Goodbye!
+2023-04-22 19:55:47,531 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-22 19:55:47,717 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-22 19:55:47,717 [MainThread  ] [INFO ]  Start polling.
+2023-04-22 19:55:49,249 [MainThread  ] [ERROR]  Can't parse entities: unsupported start tag "bound" at byte offset 21
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 188, in add_mark
+    return await app.send_photo(query.message.chat.id, photo, caption=text, reply_markup=kb)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 540, in send_photo
+    result = await self.request(api.Methods.SEND_PHOTO, payload, files)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: unsupported start tag "bound" at byte offset 21
+2023-04-22 19:55:49,308 [MainThread  ] [ERROR]  Task exception was never retrieved
+future: <Task finished name='Task-7' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=BadRequest('There is no text in the message to edit')>
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 188, in add_mark
+    return await app.send_photo(query.message.chat.id, photo, caption=text, reply_markup=kb)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 540, in send_photo
+    result = await self.request(api.Methods.SEND_PHOTO, payload, files)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: unsupported start tag "bound" at byte offset 21
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 193, in add_mark
+    return await app.edit_message_text(text, chat_id=query.message.chat.id, message_id=query.message.message_id)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 2772, in edit_message_text
+    result = await self.request(api.Methods.EDIT_MESSAGE_TEXT, payload)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: There is no text in the message to edit
+2023-04-22 19:56:57,759 [MainThread  ] [INFO ]  Stop polling...
+2023-04-22 19:56:57,781 [MainThread  ] [WARNI]  Goodbye!
+2023-04-22 19:56:58,967 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-22 19:56:59,159 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-22 19:56:59,159 [MainThread  ] [INFO ]  Start polling.
+2023-04-22 19:57:01,274 [MainThread  ] [ERROR]  Can't parse entities: unsupported start tag "bound" at byte offset 21
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 188, in add_mark
+    return await app.send_photo(query.message.chat.id, photo, caption=text, reply_markup=kb)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 540, in send_photo
+    result = await self.request(api.Methods.SEND_PHOTO, payload, files)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: unsupported start tag "bound" at byte offset 21
+2023-04-22 19:58:11,994 [MainThread  ] [INFO ]  Stop polling...
+2023-04-22 19:58:11,995 [MainThread  ] [WARNI]  Goodbye!
+2023-04-22 19:58:13,699 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-22 19:58:13,870 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-22 19:58:13,870 [MainThread  ] [INFO ]  Start polling.
+2023-04-22 19:58:19,148 [MainThread  ] [ERROR]  Can't parse entities: unsupported start tag "bound" at byte offset 21
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 189, in add_mark
+    return await app.send_photo(chat_id=query.message.chat.id, photo=photo, caption=text, reply_markup=kb)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 540, in send_photo
+    result = await self.request(api.Methods.SEND_PHOTO, payload, files)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: unsupported start tag "bound" at byte offset 21
+2023-04-22 19:58:19,209 [MainThread  ] [ERROR]  Task exception was never retrieved
+future: <Task finished name='Task-12' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=MessageToEditNotFound('Message to edit not found')>
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 189, in add_mark
+    return await app.send_photo(chat_id=query.message.chat.id, photo=photo, caption=text, reply_markup=kb)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 540, in send_photo
+    result = await self.request(api.Methods.SEND_PHOTO, payload, files)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: unsupported start tag "bound" at byte offset 21
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 194, in add_mark
+    return await app.edit_message_caption(caption=text, chat_id=query.message.chat.id, message_id=query.message.message_id)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 2824, in edit_message_caption
+    result = await self.request(api.Methods.EDIT_MESSAGE_CAPTION, payload)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageToEditNotFound: Message to edit not found
+2023-04-22 19:58:41,113 [MainThread  ] [INFO ]  Stop polling...
+2023-04-22 19:58:41,113 [MainThread  ] [WARNI]  Goodbye!
+2023-04-22 19:58:42,294 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-22 19:58:42,463 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-22 19:58:42,464 [MainThread  ] [INFO ]  Start polling.
+2023-04-22 19:58:44,849 [MainThread  ] [ERROR]  Can't parse entities: unsupported start tag "bound" at byte offset 21
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 189, in add_mark
+    return await app.send_photo(chat_id=query.message.chat.id, photo=photo, caption=text, reply_markup=kb)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 540, in send_photo
+    result = await self.request(api.Methods.SEND_PHOTO, payload, files)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: unsupported start tag "bound" at byte offset 21
+2023-04-22 19:58:44,903 [MainThread  ] [ERROR]  Task exception was never retrieved
+future: <Task finished name='Task-12' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=MessageToEditNotFound('Message to edit not found')>
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 189, in add_mark
+    return await app.send_photo(chat_id=query.message.chat.id, photo=photo, caption=text, reply_markup=kb)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 540, in send_photo
+    result = await self.request(api.Methods.SEND_PHOTO, payload, files)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: unsupported start tag "bound" at byte offset 21
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 194, in add_mark
+    return await app.edit_message_text(text=text, chat_id=query.message.chat.id, message_id=query.message.message_id)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 2772, in edit_message_text
+    result = await self.request(api.Methods.EDIT_MESSAGE_TEXT, payload)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageToEditNotFound: Message to edit not found
+2023-04-22 19:58:55,311 [MainThread  ] [INFO ]  Stop polling...
+2023-04-22 19:58:55,312 [MainThread  ] [WARNI]  Goodbye!
+2023-04-22 19:58:56,515 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-22 19:58:56,700 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-22 19:58:56,700 [MainThread  ] [INFO ]  Start polling.
+2023-04-22 19:58:59,341 [MainThread  ] [ERROR]  Can't parse entities: unsupported start tag "bound" at byte offset 21
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 189, in add_mark
+    return await app.send_photo(chat_id=query.message.chat.id, photo=photo, caption=text, reply_markup=kb)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 540, in send_photo
+    result = await self.request(api.Methods.SEND_PHOTO, payload, files)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: unsupported start tag "bound" at byte offset 21
+2023-04-22 19:59:34,671 [MainThread  ] [INFO ]  Stop polling...
+2023-04-22 19:59:34,671 [MainThread  ] [WARNI]  Goodbye!
+2023-04-22 19:59:35,905 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-22 19:59:36,087 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-22 19:59:36,087 [MainThread  ] [INFO ]  Start polling.
+2023-04-22 19:59:56,866 [MainThread  ] [ERROR]  profile_menu() missing 1 required positional argument: 'user_id'
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 80, in view_profile
+    kb = kbs.profile_menu()
+TypeError: profile_menu() missing 1 required positional argument: 'user_id'
+2023-04-22 20:02:15,844 [MainThread  ] [INFO ]  Stop polling...
+2023-04-22 20:02:15,844 [MainThread  ] [WARNI]  Goodbye!
+2023-04-22 20:02:17,132 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-22 20:02:17,332 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-22 20:02:17,332 [MainThread  ] [INFO ]  Start polling.
+2023-04-22 20:04:09,101 [MainThread  ] [INFO ]  Stop polling...
+2023-04-22 20:04:09,102 [MainThread  ] [WARNI]  Goodbye!
+2023-04-22 20:04:11,029 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-22 20:04:11,214 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-22 20:04:11,215 [MainThread  ] [INFO ]  Start polling.
+2023-04-22 20:04:42,165 [MainThread  ] [INFO ]  Stop polling...
+2023-04-22 20:04:42,166 [MainThread  ] [WARNI]  Goodbye!
+2023-04-22 20:04:43,701 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-22 20:04:43,879 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-22 20:04:43,879 [MainThread  ] [INFO ]  Start polling.
+2023-04-22 20:05:13,591 [MainThread  ] [INFO ]  Stop polling...
+2023-04-22 20:05:13,591 [MainThread  ] [WARNI]  Goodbye!
+2023-04-22 20:05:15,055 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-22 20:05:15,224 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-22 20:05:15,224 [MainThread  ] [INFO ]  Start polling.
+2023-04-22 20:06:11,565 [MainThread  ] [INFO ]  Stop polling...
+2023-04-22 20:06:11,565 [MainThread  ] [WARNI]  Goodbye!
+2023-04-22 20:06:12,978 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-22 20:06:13,179 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-22 20:06:13,179 [MainThread  ] [INFO ]  Start polling.
+2023-04-22 20:11:27,020 [MainThread  ] [INFO ]  Stop polling...
+2023-04-22 20:11:27,021 [MainThread  ] [WARNI]  Goodbye!

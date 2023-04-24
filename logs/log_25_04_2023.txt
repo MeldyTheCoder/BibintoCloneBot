@@ -1,0 +1,210 @@
+2023-04-25 01:42:26,573 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-25 01:42:26,689 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-25 01:42:26,689 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-25 01:42:26,872 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-25 01:42:26,872 [MainThread  ] [INFO ]  Start polling.
+2023-04-25 01:42:30,148 [MainThread  ] [ERROR]  'ProfileMenu' object has no attribute '_ProfileMenu__options'
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 93, in view_profile
+    menu = ProfileMenu(app, dp, user=user, likes=likes)
+  File "D:\PythonProjects\BibintoCloneBot\menus.py", line 25, in __init__
+    self.format_menu()
+  File "D:\PythonProjects\BibintoCloneBot\menus.py", line 69, in format_menu
+    user: UserModel = self.__options['user']
+AttributeError: 'ProfileMenu' object has no attribute '_ProfileMenu__options'
+2023-04-25 01:43:24,206 [MainThread  ] [INFO ]  Stop polling...
+2023-04-25 01:43:24,206 [MainThread  ] [WARNI]  Goodbye!
+2023-04-25 01:43:25,423 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-25 01:43:25,441 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-25 01:43:25,441 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-25 01:43:25,607 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-25 01:43:25,607 [MainThread  ] [INFO ]  Start polling.
+2023-04-25 01:43:27,868 [MainThread  ] [ERROR]  'ProfileMenu' object has no attribute '_ProfileMenu__options'
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 93, in view_profile
+    menu = ProfileMenu(app, dp, user=user, likes=likes)
+  File "D:\PythonProjects\BibintoCloneBot\menus.py", line 25, in __init__
+    self.format_menu()
+  File "D:\PythonProjects\BibintoCloneBot\menus.py", line 69, in format_menu
+    user: UserModel = self.__options['user']
+AttributeError: 'ProfileMenu' object has no attribute '_ProfileMenu__options'
+2023-04-25 01:44:09,291 [MainThread  ] [INFO ]  Stop polling...
+2023-04-25 01:44:09,291 [MainThread  ] [WARNI]  Goodbye!
+2023-04-25 01:44:10,633 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-25 01:44:10,652 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-25 01:44:10,652 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-25 01:44:10,818 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-25 01:44:10,819 [MainThread  ] [INFO ]  Start polling.
+2023-04-25 01:44:13,321 [MainThread  ] [ERROR]  'age'
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 93, in view_profile
+    menu = ProfileMenu(app, dp, user=user, likes=likes)
+  File "D:\PythonProjects\BibintoCloneBot\menus.py", line 24, in __init__
+    self.format_menu()
+  File "D:\PythonProjects\BibintoCloneBot\menus.py", line 82, in format_menu
+    self.text = self.text.format(**data)
+KeyError: 'age'
+2023-04-25 01:44:40,348 [MainThread  ] [INFO ]  Stop polling...
+2023-04-25 01:44:40,349 [MainThread  ] [WARNI]  Goodbye!
+2023-04-25 01:44:41,529 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-25 01:44:41,548 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-25 01:44:41,548 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-25 01:44:41,718 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-25 01:44:41,719 [MainThread  ] [INFO ]  Start polling.
+2023-04-25 01:44:43,262 [MainThread  ] [ERROR]  Can't parse reply keyboard markup json object
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\menus.py", line 47, in send_with_photo
+    return await self.__app.send_photo(chat_id, photo=photo, caption=self.text, reply_markup=self.reply_markup)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 540, in send_photo
+    result = await self.request(api.Methods.SEND_PHOTO, payload, files)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse reply keyboard markup json object
+2023-04-25 01:45:11,853 [MainThread  ] [INFO ]  Stop polling...
+2023-04-25 01:45:11,853 [MainThread  ] [WARNI]  Goodbye!
+2023-04-25 01:45:13,354 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-25 01:45:13,375 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-25 01:45:13,375 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-25 01:45:13,537 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-25 01:45:13,537 [MainThread  ] [INFO ]  Start polling.
+2023-04-25 01:45:15,677 [MainThread  ] [ERROR]  <lambda>() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 93, in view_profile
+    menu = ProfileMenu(app, dp, user=user, likes=likes)
+  File "D:\PythonProjects\BibintoCloneBot\menus.py", line 24, in __init__
+    self.format_menu()
+  File "D:\PythonProjects\BibintoCloneBot\menus.py", line 84, in format_menu
+    self.reply_markup = self.reply_markup(user.id)
+TypeError: <lambda>() takes 1 positional argument but 2 were given
+2023-04-25 01:48:05,172 [MainThread  ] [INFO ]  Stop polling...
+2023-04-25 01:48:05,173 [MainThread  ] [WARNI]  Goodbye!
+2023-04-25 01:49:05,756 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-25 01:49:05,774 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-25 01:49:05,774 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-25 01:49:05,945 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-25 01:49:05,946 [MainThread  ] [INFO ]  Start polling.
+2023-04-25 01:49:08,499 [MainThread  ] [ERROR]  <lambda>() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 93, in view_profile
+    menu = ProfileMenu(app, dp, user=user, likes=likes)
+  File "D:\PythonProjects\BibintoCloneBot\menus.py", line 24, in __init__
+    self.format_menu()
+  File "D:\PythonProjects\BibintoCloneBot\menus.py", line 84, in format_menu
+    self.reply_markup = self.reply_markup(user.id)
+TypeError: <lambda>() takes 1 positional argument but 2 were given
+2023-04-25 01:49:35,669 [MainThread  ] [INFO ]  Stop polling...
+2023-04-25 01:49:35,669 [MainThread  ] [WARNI]  Goodbye!
+2023-04-25 01:49:36,761 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-25 01:49:36,779 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-25 01:49:36,779 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-25 01:49:36,929 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-25 01:49:36,930 [MainThread  ] [INFO ]  Start polling.
+2023-04-25 01:49:37,693 [MainThread  ] [ERROR]  <lambda>() takes 0 positional arguments but 1 was given
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 93, in view_profile
+    menu = ProfileMenu(app, dp, user=user, likes=likes)
+  File "D:\PythonProjects\BibintoCloneBot\menus.py", line 24, in __init__
+    self.format_menu()
+  File "D:\PythonProjects\BibintoCloneBot\menus.py", line 84, in format_menu
+    self.reply_markup = self.reply_markup(user_id=user.id)
+TypeError: <lambda>() takes 0 positional arguments but 1 was given
+2023-04-25 01:51:21,019 [MainThread  ] [INFO ]  Stop polling...
+2023-04-25 01:51:21,019 [MainThread  ] [WARNI]  Goodbye!
+2023-04-25 01:51:22,232 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-25 01:51:22,250 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-25 01:51:22,250 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-25 01:51:22,424 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-25 01:51:22,424 [MainThread  ] [INFO ]  Start polling.
+2023-04-25 01:51:23,417 [MainThread  ] [ERROR]  <lambda>() takes 0 positional arguments but 1 was given
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 93, in view_profile
+    menu = ProfileMenu(app, dp, user=user, likes=likes)
+  File "D:\PythonProjects\BibintoCloneBot\menus.py", line 26, in __init__
+    self.format_menu()
+  File "D:\PythonProjects\BibintoCloneBot\menus.py", line 86, in format_menu
+    self.keyboard = self.reply_markup(user_id=user.id)
+TypeError: <lambda>() takes 0 positional arguments but 1 was given
+2023-04-25 01:52:47,788 [MainThread  ] [INFO ]  Stop polling...
+2023-04-25 01:52:47,789 [MainThread  ] [WARNI]  Goodbye!
+2023-04-25 01:52:48,877 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-25 01:52:48,899 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-25 01:52:48,899 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-25 01:52:49,112 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-25 01:52:49,112 [MainThread  ] [INFO ]  Start polling.
+2023-04-25 01:52:49,731 [MainThread  ] [ERROR]  <lambda>() got multiple values for argument 'user_id'
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 93, in view_profile
+    menu = ProfileMenu(app, dp, user=user, likes=likes)
+  File "D:\PythonProjects\BibintoCloneBot\menus.py", line 26, in __init__
+    self.format_menu()
+  File "D:\PythonProjects\BibintoCloneBot\menus.py", line 87, in format_menu
+    self.keyboard = self.reply_markup(user_id=user.id)
+TypeError: <lambda>() got multiple values for argument 'user_id'
+2023-04-25 01:53:17,649 [MainThread  ] [INFO ]  Stop polling...
+2023-04-25 01:53:17,649 [MainThread  ] [WARNI]  Goodbye!
+2023-04-25 01:53:18,770 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-25 01:53:18,787 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-25 01:53:18,787 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-25 01:53:18,942 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-25 01:53:18,943 [MainThread  ] [INFO ]  Start polling.
+2023-04-25 01:53:19,871 [MainThread  ] [ERROR]  <lambda>() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 93, in view_profile
+    menu = ProfileMenu(app, dp, user=user, likes=likes)
+  File "D:\PythonProjects\BibintoCloneBot\menus.py", line 26, in __init__
+    self.format_menu()
+  File "D:\PythonProjects\BibintoCloneBot\menus.py", line 87, in format_menu
+    self.keyboard = self.reply_markup(user.id)
+TypeError: <lambda>() takes 1 positional argument but 2 were given
+2023-04-25 01:55:06,932 [MainThread  ] [INFO ]  Stop polling...
+2023-04-25 01:55:06,932 [MainThread  ] [WARNI]  Goodbye!
+2023-04-25 01:55:12,602 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-25 01:55:12,620 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-25 01:55:12,620 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-25 01:55:12,779 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-25 01:55:12,779 [MainThread  ] [INFO ]  Start polling.
+2023-04-25 01:55:14,247 [MainThread  ] [ERROR]  <lambda>() got multiple values for argument 'user_id'
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 93, in view_profile
+    menu = ProfileMenu(app, dp, user=user, likes=likes)
+  File "D:\PythonProjects\BibintoCloneBot\menus.py", line 26, in __init__
+    self.format_menu()
+  File "D:\PythonProjects\BibintoCloneBot\menus.py", line 90, in format_menu
+    self.keyboard = self.get_keyboard(user_id=user.id)
+  File "D:\PythonProjects\BibintoCloneBot\menus.py", line 33, in get_keyboard
+    return self.reply_markup(**options)
+TypeError: <lambda>() got multiple values for argument 'user_id'
+2023-04-25 01:56:33,483 [MainThread  ] [INFO ]  Stop polling...
+2023-04-25 01:56:33,484 [MainThread  ] [WARNI]  Goodbye!
+2023-04-25 01:56:34,796 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-25 01:56:34,814 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-25 01:56:34,814 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-25 01:56:34,989 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-25 01:56:34,989 [MainThread  ] [INFO ]  Start polling.
+2023-04-25 01:57:24,624 [MainThread  ] [INFO ]  Stop polling...
+2023-04-25 01:57:24,624 [MainThread  ] [WARNI]  Goodbye!
+2023-04-25 01:57:25,765 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-25 01:57:25,787 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-25 01:57:25,787 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-25 01:57:25,967 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-25 01:57:25,967 [MainThread  ] [INFO ]  Start polling.
+2023-04-25 01:58:01,281 [MainThread  ] [INFO ]  Stop polling...
+2023-04-25 01:58:01,281 [MainThread  ] [WARNI]  Goodbye!
+2023-04-25 01:58:02,616 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-25 01:58:02,635 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-25 01:58:02,635 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-25 01:58:02,801 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-25 01:58:02,801 [MainThread  ] [INFO ]  Start polling.
+2023-04-25 01:58:38,943 [MainThread  ] [INFO ]  Stop polling...
+2023-04-25 01:58:38,943 [MainThread  ] [WARNI]  Goodbye!
+2023-04-25 01:58:40,156 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-25 01:58:40,175 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-25 01:58:40,175 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-25 01:58:40,327 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-25 01:58:40,328 [MainThread  ] [INFO ]  Start polling.

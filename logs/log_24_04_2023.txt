@@ -1,0 +1,801 @@
+2023-04-24 03:32:27,405 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 03:32:27,442 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 03:32:27,442 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 03:32:27,620 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 03:32:27,621 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 03:32:34,348 [MainThread  ] [ERROR]  No such gender male
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 101, in view_profile
+    ☦️ <b>Пол</b>: <code>{"мужской" if user.gender == 'male' else 'женский'}</code>
+  File "D:\PythonProjects\BibintoCloneBot\models\user.py", line 39, in gender
+    return GenderModel(self.__gender)
+  File "D:\PythonProjects\BibintoCloneBot\models\gender.py", line 7, in __init__
+    assert gender not in genders, f"No such gender {gender}"
+AssertionError: No such gender male
+2023-04-24 03:33:29,059 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 03:33:29,059 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 03:33:30,398 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 03:33:30,412 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 03:33:30,412 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 03:33:30,565 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 03:33:30,566 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 03:33:52,895 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 03:33:52,896 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 03:33:54,122 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 03:33:54,137 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 03:33:54,137 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 03:33:54,303 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 03:33:54,303 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 03:34:21,714 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 03:34:21,714 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 03:34:22,923 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 03:34:22,938 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 03:34:22,938 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 03:34:23,134 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 03:34:23,134 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 03:38:14,551 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 03:38:14,551 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 03:38:15,862 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 03:38:15,877 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 03:38:15,877 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 03:38:16,043 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 03:38:16,044 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 03:38:31,725 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 03:38:31,725 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 03:38:33,026 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 03:38:33,040 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 03:38:33,040 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 03:38:33,217 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 03:38:33,217 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 03:39:07,533 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 03:39:07,533 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 03:39:08,703 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 03:39:08,718 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 03:39:08,718 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 03:39:08,907 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 03:39:08,907 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 03:39:48,699 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 03:39:48,700 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 03:39:49,882 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 03:39:49,897 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 03:39:49,897 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 03:39:50,048 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 03:39:50,048 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 03:40:39,018 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 03:40:39,018 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 03:40:40,284 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 03:40:40,297 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 03:40:40,298 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 03:40:40,454 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 03:40:40,454 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 03:40:43,528 [MainThread  ] [ERROR]  'State' object has no attribute 'name'
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 194, in change_profile_query
+    states_names = [state.name for state in states]
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 194, in <listcomp>
+    states_names = [state.name for state in states]
+AttributeError: 'State' object has no attribute 'name'
+2023-04-24 03:40:49,225 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 03:40:49,225 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 03:40:50,286 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 03:40:50,301 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 03:40:50,301 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 03:40:50,470 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 03:40:50,470 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 03:42:05,147 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 03:42:05,147 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 03:42:15,759 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 03:42:15,773 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 03:42:15,773 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 03:42:15,935 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 03:42:15,936 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 03:42:18,236 [MainThread  ] [ERROR]  unsupported operand type(s) for +: 'StatesGroupMeta' and 'str'
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 194, in change_profile_query
+    states_names = [state.state.replace(state.group + ":", "") for state in states]
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 194, in <listcomp>
+    states_names = [state.state.replace(state.group + ":", "") for state in states]
+TypeError: unsupported operand type(s) for +: 'StatesGroupMeta' and 'str'
+2023-04-24 03:42:40,856 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 03:42:40,856 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 03:42:42,313 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 03:42:42,327 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 03:42:42,327 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 03:42:42,500 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 03:42:42,500 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 03:43:32,704 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 03:43:32,705 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 03:43:33,849 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 03:43:33,864 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 03:43:33,864 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 03:43:34,039 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 03:43:34,039 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 03:44:36,340 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 03:44:36,341 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 03:44:37,571 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 03:44:37,586 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 03:44:37,586 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 03:44:37,762 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 03:44:37,762 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 03:53:34,516 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 03:53:34,516 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 03:53:35,902 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 03:53:35,917 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 03:53:35,917 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 03:53:36,135 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 03:53:36,136 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 03:53:42,293 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 03:53:42,294 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 03:54:08,012 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 03:54:08,026 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 03:54:08,026 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 03:54:08,182 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 03:54:08,182 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 03:54:14,708 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 03:54:14,708 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 10:34:31,963 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 10:34:32,031 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 10:34:32,031 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 10:34:32,224 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 10:34:32,224 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 10:35:14,270 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 10:35:14,270 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 10:35:15,485 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 10:35:15,498 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 10:35:15,499 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 10:35:15,676 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 10:35:15,676 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 10:35:56,056 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 10:35:56,056 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 10:35:57,247 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 10:35:57,261 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 10:35:57,261 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 10:35:57,416 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 10:35:57,417 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 10:36:29,829 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 10:36:29,829 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 10:36:30,956 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 10:36:30,977 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 10:36:30,977 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 10:36:31,139 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 10:36:31,139 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 10:36:35,302 [MainThread  ] [ERROR]  'str' object has no attribute 'finish'
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 239, in registration_photo
+    await state.finish()
+AttributeError: 'str' object has no attribute 'finish'
+2023-04-24 10:36:35,303 [MainThread  ] [ERROR]  Task exception was never retrieved
+future: <Task finished name='Task-18' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=AttributeError("'str' object has no attribute 'finish'")>
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 239, in registration_photo
+    await state.finish()
+AttributeError: 'str' object has no attribute 'finish'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 245, in registration_photo
+    await state.finish()
+AttributeError: 'str' object has no attribute 'finish'
+2023-04-24 10:38:42,585 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 10:38:42,586 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 10:38:43,845 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 10:38:43,860 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 10:38:43,860 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 10:38:44,017 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 10:38:44,017 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 10:38:49,106 [MainThread  ] [ERROR]  'FSMContext' object has no attribute 'group'
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 237, in registration_photo
+    state = str(await state.get_state()).replace(f"{state.group._group_name}:", "")
+AttributeError: 'FSMContext' object has no attribute 'group'
+2023-04-24 10:39:46,785 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 10:39:46,785 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 10:39:48,000 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 10:39:48,014 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 10:39:48,014 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 10:39:48,172 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 10:39:48,172 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 10:39:55,367 [MainThread  ] [ERROR]  'str' object has no attribute 'finish'
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 244, in registration_photo
+    await state.finish()
+AttributeError: 'str' object has no attribute 'finish'
+2023-04-24 10:39:55,368 [MainThread  ] [ERROR]  Task exception was never retrieved
+future: <Task finished name='Task-18' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=AttributeError("'str' object has no attribute 'finish'")>
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 244, in registration_photo
+    await state.finish()
+AttributeError: 'str' object has no attribute 'finish'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 250, in registration_photo
+    await state.finish()
+AttributeError: 'str' object has no attribute 'finish'
+2023-04-24 10:40:09,388 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 10:40:09,389 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 10:40:10,646 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 10:40:10,660 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 10:40:10,660 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 10:40:10,831 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 10:40:10,831 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 10:40:21,175 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 10:40:21,176 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 10:40:56,750 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 10:40:56,764 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 10:40:56,765 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 10:40:56,923 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 10:40:56,923 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 10:40:58,639 [MainThread  ] [ERROR]  Wrong remote file identifier specified: wrong character in the string
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 131, in view_profile
+    return await app.send_photo(message.chat.id, photo, caption=text, reply_markup=kb)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 540, in send_photo
+    result = await self.request(api.Methods.SEND_PHOTO, payload, files)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Wrong remote file identifier specified: wrong character in the string
+2023-04-24 10:41:00,587 [MainThread  ] [ERROR]  Wrong remote file identifier specified: wrong character in the string
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 131, in view_profile
+    return await app.send_photo(message.chat.id, photo, caption=text, reply_markup=kb)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 540, in send_photo
+    result = await self.request(api.Methods.SEND_PHOTO, payload, files)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Wrong remote file identifier specified: wrong character in the string
+2023-04-24 10:41:31,026 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 10:41:31,027 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 10:41:32,651 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 10:41:32,664 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 10:41:32,664 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 10:41:32,830 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 10:41:32,830 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 11:14:18,672 [MainThread  ] [ERROR]  Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\connector.py", line 986, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **kwargs)  # type: ignore[return-value]  # noqa
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 1056, in create_connection
+    raise exceptions[0]
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 1041, in create_connection
+    sock = await self._connect_sock(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 955, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\asyncio\proactor_events.py", line 702, in sock_connect
+    return await self._proactor.connect(sock, address)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 812, in _poll
+    value = callback(transferred, key, ov)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 599, in finish_connect
+    ov.getresult()
+OSError: [WinError 121] Превышен таймаут семафора
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 139, in make_request
+    async with session.post(url, data=req, **kwargs) as response:
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\client.py", line 1138, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\client.py", line 535, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\connector.py", line 542, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\connector.py", line 907, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\connector.py", line 1206, in _create_direct_connection
+    raise last_exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\connector.py", line 1175, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\connector.py", line 992, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 142, in make_request
+    raise exceptions.NetworkError(f"aiohttp client throws an error: {e.__class__.__name__}: {e}")
+aiogram.utils.exceptions.NetworkError: Aiohttp client throws an error: ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2023-04-24 11:21:36,479 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 11:21:36,479 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 11:21:37,812 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 11:21:37,827 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 11:21:37,827 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 11:21:51,300 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 11:21:51,315 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 11:21:51,315 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 11:21:51,493 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 11:21:51,493 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 11:23:02,688 [MainThread  ] [ERROR]  Not valid data for type int
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 245, in registration_photo
+    text_formatted = field.get_transformed(text)
+  File "D:\PythonProjects\BibintoCloneBot\models\fields.py", line 21, in get_transformed
+    raise Exception(f'Not valid data for type {self.field_type}')
+Exception: Not valid data for type int
+2023-04-24 11:24:06,681 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 11:24:06,682 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 11:24:07,999 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 11:24:08,013 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 11:24:08,013 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 11:24:08,204 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 11:24:08,204 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 11:24:36,808 [MainThread  ] [ERROR]  'list' object has no attribute 'file_id'
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 248, in registration_photo
+    text_formatted = getattr(message, field.field_type).file_id
+AttributeError: 'list' object has no attribute 'file_id'
+2023-04-24 11:25:28,619 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 11:25:28,619 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 11:25:29,937 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 11:25:29,956 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 11:25:29,956 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 11:25:30,108 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 11:25:30,108 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 11:25:34,220 [MainThread  ] [ERROR]  list index out of range
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 250, in registration_photo
+    data = data[0]
+IndexError: list index out of range
+2023-04-24 11:57:22,287 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 11:57:22,288 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 11:57:23,835 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 11:57:23,851 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 11:57:23,851 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 11:57:24,009 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 11:57:24,010 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 11:58:32,420 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 11:58:32,420 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 11:58:33,637 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 11:58:33,650 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 11:58:33,650 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 11:58:33,830 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 11:58:33,830 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 12:04:01,762 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 12:04:01,762 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 13:15:29,581 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 13:15:29,602 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 13:15:29,603 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 13:15:29,754 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 13:15:29,754 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 13:15:31,981 [MainThread  ] [ERROR]  Task exception was never retrieved
+future: <Task finished name='Task-8' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=TypeError("get_state_short_name() missing 1 required positional argument: 'state'")>
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 115, in start_unregistered
+    text = Registration.texts[Registration.get_state_short_name(state)][0]
+TypeError: get_state_short_name() missing 1 required positional argument: 'state'
+2023-04-24 13:17:20,360 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 13:17:20,361 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 13:21:24,818 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 13:21:24,832 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 13:21:24,832 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 13:21:25,007 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 13:21:25,007 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 13:21:26,613 [MainThread  ] [ERROR]  Task exception was never retrieved
+future: <Task finished name='Task-8' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=KeyError(<coroutine object CustomStatesGroup.get_state_short_name at 0x000001BB4D7E3340>)>
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 115, in start_unregistered
+    text = Registration.texts[Registration().get_state_short_name(state=state)][0]
+KeyError: <coroutine object CustomStatesGroup.get_state_short_name at 0x000001BB4D7E3340>
+2023-04-24 13:21:35,993 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 13:21:35,994 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 13:21:37,389 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 13:21:37,403 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 13:21:37,403 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 13:21:37,561 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 13:21:37,561 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 13:21:47,523 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 13:21:47,523 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 13:23:18,841 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 13:23:18,855 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 13:23:18,855 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 13:23:19,042 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 13:23:19,042 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 13:23:28,624 [MainThread  ] [ERROR]  '<coroutine object FSMContext.get_state at 0x000001FD4D99D840>'
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 193, in registration
+    field = fields[state_name]
+KeyError: '<coroutine object FSMContext.get_state at 0x000001FD4D99D840>'
+2023-04-24 13:26:37,997 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 13:26:37,998 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 13:26:39,334 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 13:26:39,350 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 13:26:39,350 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 13:26:39,528 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 13:26:39,528 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 13:26:49,502 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 13:26:49,502 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 13:27:36,097 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 13:27:36,112 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 13:27:36,112 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 13:27:36,283 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 13:27:36,283 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 13:27:41,095 [MainThread  ] [ERROR]  object Registration can't be used in 'await' expression
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 114, in registration
+    state_name = (await Registration()).get_state_short_name(state)
+TypeError: object Registration can't be used in 'await' expression
+2023-04-24 13:27:52,187 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 13:27:52,188 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 13:27:53,474 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 13:27:53,490 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 13:27:53,490 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 13:27:53,657 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 13:27:53,657 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 13:27:57,136 [MainThread  ] [ERROR]  '<coroutine object FSMContext.get_state at 0x000001FA92505F40>'
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 117, in registration
+    field = fields[state_name]
+KeyError: '<coroutine object FSMContext.get_state at 0x000001FA92505F40>'
+2023-04-24 13:28:13,089 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 13:28:13,089 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 13:28:14,288 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 13:28:14,304 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 13:28:14,304 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 13:28:14,484 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 13:28:14,484 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 13:28:18,986 [MainThread  ] [ERROR]  '<coroutine object FSMContext.get_state at 0x000001DCBD0A5F40>'
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 117, in registration
+    field = fields[state_name]
+KeyError: '<coroutine object FSMContext.get_state at 0x000001DCBD0A5F40>'
+2023-04-24 13:29:00,226 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 13:29:00,227 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 13:29:04,782 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 13:29:04,797 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 13:29:04,797 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 13:29:05,009 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 13:29:05,009 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 13:29:09,439 [MainThread  ] [ERROR]  get_state_short_name() missing 1 required positional argument: 'state'
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 142, in registration
+    text = Registration.texts[Registration.get_state_short_name(state)][0]
+TypeError: get_state_short_name() missing 1 required positional argument: 'state'
+2023-04-24 13:29:09,439 [MainThread  ] [ERROR]  Task exception was never retrieved
+future: <Task finished name='Task-14' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=AttributeError("'str' object has no attribute 'finish'")>
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 142, in registration
+    text = Registration.texts[Registration.get_state_short_name(state)][0]
+TypeError: get_state_short_name() missing 1 required positional argument: 'state'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 152, in registration
+    await state.finish()
+AttributeError: 'str' object has no attribute 'finish'
+2023-04-24 13:31:13,234 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 13:31:13,235 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 13:31:14,515 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 13:31:14,531 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 13:31:14,531 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 13:31:14,692 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 13:31:14,692 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 13:31:23,754 [MainThread  ] [ERROR]  Not valid data for type int
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 122, in registration
+    text_formatted = field.get_transformed(text)
+  File "D:\PythonProjects\BibintoCloneBot\models\fields.py", line 21, in get_transformed
+    raise Exception(f'Not valid data for type {self.field_type}')
+Exception: Not valid data for type int
+2023-04-24 13:31:27,859 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 13:31:27,859 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 13:31:29,129 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 13:31:29,143 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 13:31:29,143 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 13:31:29,317 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 13:31:29,317 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 13:33:23,670 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 13:33:23,671 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 13:33:24,997 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 13:33:25,012 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 13:33:25,012 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 13:33:25,190 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 13:33:25,190 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 13:35:01,921 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 13:35:01,921 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 13:59:17,195 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 13:59:17,221 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 13:59:17,221 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 13:59:17,377 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 13:59:17,377 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 14:02:31,466 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 14:02:31,467 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 14:02:32,746 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 14:02:32,761 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 14:02:32,761 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 14:02:32,938 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 14:02:32,939 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 14:02:36,874 [MainThread  ] [ERROR]  division by zero
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 92, in view_profile
+    likes_avg = round(sum([like.mark for like in likes_incoming]) / len(likes_incoming), 1)
+ZeroDivisionError: division by zero
+2023-04-24 14:03:06,350 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 14:03:06,350 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 14:03:07,467 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 14:03:07,481 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 14:03:07,481 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 14:03:07,667 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 14:03:07,667 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 14:04:49,264 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 14:04:49,264 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 14:04:50,902 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 14:04:50,918 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 14:04:50,918 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 14:04:51,090 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 14:04:51,091 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 14:05:17,198 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 14:05:17,199 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 14:05:18,860 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 14:05:18,875 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 14:05:18,875 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 14:05:19,040 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 14:05:19,041 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 14:05:29,942 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 14:05:29,942 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 15:08:33,377 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 15:08:33,455 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 15:08:33,455 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 15:08:33,627 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 15:08:33,628 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 15:08:40,050 [MainThread  ] [ERROR]  __init__() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 95, in view_profile
+    👤 <b>{user.name.first_name}, {user.city}</b>
+  File "D:\PythonProjects\BibintoCloneBot\models\user.py", line 34, in name
+    return NameModel(self.__name)
+TypeError: __init__() takes 1 positional argument but 2 were given
+2023-04-24 15:17:15,686 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 15:17:15,686 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 15:18:39,321 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 15:18:39,336 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 15:18:39,336 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 15:18:39,500 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 15:18:39,501 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 15:18:42,545 [MainThread  ] [ERROR]  __init__() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 95, in view_profile
+    👤 <b>{user.name.first_name}, {user.city}</b>
+  File "D:\PythonProjects\BibintoCloneBot\models\user.py", line 44, in name
+    return NameModel(self.__name)
+TypeError: __init__() takes 1 positional argument but 2 were given
+2023-04-24 15:19:36,684 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 15:19:36,685 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 15:19:37,823 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 15:19:37,838 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 15:19:37,838 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 15:19:37,989 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 15:19:37,989 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 15:19:39,025 [MainThread  ] [ERROR]  __init__() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 96, in view_profile
+    👤 <b>{user.name.first_name}, {user.city}</b>
+  File "D:\PythonProjects\BibintoCloneBot\models\user.py", line 44, in name
+    return NameModel(self.__name)
+TypeError: __init__() takes 1 positional argument but 2 were given
+2023-04-24 16:26:49,082 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 16:26:49,083 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 16:28:56,336 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 16:28:56,353 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 16:28:56,353 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 16:28:56,506 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 16:28:56,506 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 16:29:35,248 [MainThread  ] [ERROR]  'UserModel' object has no attribute '_UserModel__database_adapter'
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 96, in view_profile
+    👤 <b>{user.name.first_name}, {user.city}</b>
+  File "D:\PythonProjects\BibintoCloneBot\models\user.py", line 33, in name
+    return NameModel(self.__database_adapter, full_name=self.__name)
+AttributeError: 'UserModel' object has no attribute '_UserModel__database_adapter'
+2023-04-24 16:30:13,556 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 16:30:13,557 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 16:30:14,729 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 16:30:14,743 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 16:30:14,743 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 16:30:14,900 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 16:30:14,900 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 16:30:18,422 [MainThread  ] [ERROR]  'Database' object has no attribute 'get_city'
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 96, in view_profile
+    👤 <b>{user.name.first_name}, {user.city}</b>
+  File "D:\PythonProjects\BibintoCloneBot\models\user.py", line 26, in city
+    data = self._database_adapter.get_city(id=self.__city)
+  File "D:\PythonProjects\BibintoCloneBot\models\database.py", line 31, in get_city
+    return self.__db.get_city(*args, **kwargs)
+AttributeError: 'Database' object has no attribute 'get_city'
+2023-04-24 16:31:22,443 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 16:31:22,443 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 16:31:23,695 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 16:31:23,711 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 16:31:23,711 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 16:31:23,903 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 16:31:23,903 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 16:31:26,044 [MainThread  ] [ERROR]  models.city.CityModel() argument after ** must be a mapping, not NoneType
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 96, in view_profile
+    👤 <b>{user.name.first_name}, {user.city}</b>
+  File "D:\PythonProjects\BibintoCloneBot\models\user.py", line 29, in city
+    return CityModel(self._database_adapter, **data)
+TypeError: models.city.CityModel() argument after ** must be a mapping, not NoneType
+2023-04-24 16:32:14,576 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 16:32:14,576 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 16:32:15,753 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 16:32:15,770 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 16:32:15,770 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 16:32:15,944 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 16:32:15,944 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 16:32:18,077 [MainThread  ] [ERROR]  Can't parse entities: unsupported start tag "database.database" at byte offset 84
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 108, in view_profile
+    return await app.send_photo(message.chat.id, photo, caption=text, reply_markup=kb)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 540, in send_photo
+    result = await self.request(api.Methods.SEND_PHOTO, payload, files)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: unsupported start tag "database.database" at byte offset 84
+2023-04-24 16:33:32,850 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 16:33:32,850 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 16:33:33,978 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 16:33:33,993 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 16:33:33,993 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 16:33:34,145 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 16:33:34,146 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 17:59:51,394 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 17:59:51,397 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 17:59:54,279 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 17:59:54,312 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 17:59:54,312 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 17:59:54,488 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 17:59:54,488 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 18:12:21,827 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 18:12:21,827 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 20:57:51,968 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 20:57:51,992 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 20:57:51,992 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 20:57:52,156 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 20:57:52,156 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 20:58:02,008 [MainThread  ] [ERROR]  type object 'ProfileSettings' has no attribute 'setup'
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 223, in change_profile_query
+    print(getattr(ProfileSettings, 'setup'))
+AttributeError: type object 'ProfileSettings' has no attribute 'setup'
+2023-04-24 20:58:12,511 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 20:58:12,511 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 20:58:13,602 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 20:58:13,618 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 20:58:13,618 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 20:58:13,771 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 20:58:13,772 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 20:59:57,080 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 20:59:57,080 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 20:59:58,618 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 20:59:58,635 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 20:59:58,635 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 20:59:58,799 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 20:59:58,799 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 21:00:20,240 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 21:00:20,240 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 21:00:22,781 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 21:00:22,797 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 21:00:22,798 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 21:00:22,966 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 21:00:22,966 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 21:01:18,235 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 21:01:18,235 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 21:01:28,027 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 21:01:28,044 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 21:01:28,044 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 21:01:28,232 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 21:01:28,232 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 21:01:53,035 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 21:01:53,035 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 21:01:54,357 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 21:01:54,374 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 21:01:54,374 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 21:01:54,562 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 21:01:54,562 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 21:02:04,554 [MainThread  ] [ERROR]  list index out of range
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 253, in change_profile
+    data = data[0]
+IndexError: list index out of range
+2023-04-24 21:03:48,183 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 21:03:48,183 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 21:03:50,033 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 21:03:50,049 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 21:03:50,049 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 21:03:50,214 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 21:03:50,214 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 21:06:32,997 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 21:06:32,998 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 21:06:34,310 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 21:06:34,326 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 21:06:34,326 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 21:06:34,500 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 21:06:34,500 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 21:10:33,537 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 21:10:33,537 [MainThread  ] [WARNI]  Goodbye!
+2023-04-24 21:10:34,941 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-24 21:10:34,957 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-24 21:10:34,957 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-24 21:10:35,157 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-24 21:10:35,157 [MainThread  ] [INFO ]  Start polling.
+2023-04-24 22:22:11,065 [MainThread  ] [INFO ]  Stop polling...
+2023-04-24 22:22:11,067 [MainThread  ] [WARNI]  Goodbye!

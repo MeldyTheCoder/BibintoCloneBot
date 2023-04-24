@@ -1,0 +1,447 @@
+2023-04-23 11:01:30,802 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-23 11:01:31,050 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-23 11:01:31,050 [MainThread  ] [INFO ]  Start polling.
+2023-04-23 11:02:23,429 [MainThread  ] [INFO ]  Stop polling...
+2023-04-23 11:02:23,429 [MainThread  ] [WARNI]  Goodbye!
+2023-04-23 12:28:04,683 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-23 12:28:04,901 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-23 12:28:04,902 [MainThread  ] [INFO ]  Start polling.
+2023-04-23 12:28:56,976 [MainThread  ] [INFO ]  Stop polling...
+2023-04-23 12:28:56,977 [MainThread  ] [WARNI]  Goodbye!
+2023-04-23 12:28:58,316 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-23 12:28:58,485 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-23 12:28:58,485 [MainThread  ] [INFO ]  Start polling.
+2023-04-23 12:29:31,610 [MainThread  ] [INFO ]  Stop polling...
+2023-04-23 12:29:31,611 [MainThread  ] [WARNI]  Goodbye!
+2023-04-23 12:29:32,764 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-23 12:29:32,969 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-23 12:29:32,969 [MainThread  ] [INFO ]  Start polling.
+2023-04-23 12:29:33,616 [MainThread  ] [ERROR]  profile_menu() missing 1 required positional argument: 'user_id'
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 80, in view_profile
+    kb = kbs.profile_menu()
+TypeError: profile_menu() missing 1 required positional argument: 'user_id'
+2023-04-23 12:29:34,409 [MainThread  ] [ERROR]  profile_menu() missing 1 required positional argument: 'user_id'
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 80, in view_profile
+    kb = kbs.profile_menu()
+TypeError: profile_menu() missing 1 required positional argument: 'user_id'
+2023-04-23 12:30:34,655 [MainThread  ] [INFO ]  Stop polling...
+2023-04-23 12:30:34,655 [MainThread  ] [WARNI]  Goodbye!
+2023-04-23 12:30:35,948 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-23 12:30:36,151 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-23 12:30:36,151 [MainThread  ] [INFO ]  Start polling.
+2023-04-23 12:31:06,103 [MainThread  ] [INFO ]  Stop polling...
+2023-04-23 12:31:06,104 [MainThread  ] [WARNI]  Goodbye!
+2023-04-23 12:31:07,364 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-23 12:31:07,529 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-23 12:31:07,529 [MainThread  ] [INFO ]  Start polling.
+2023-04-23 12:33:46,261 [MainThread  ] [INFO ]  Stop polling...
+2023-04-23 12:33:46,261 [MainThread  ] [WARNI]  Goodbye!
+2023-04-23 12:33:48,242 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-23 12:33:48,420 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-23 12:33:48,421 [MainThread  ] [INFO ]  Start polling.
+2023-04-23 12:34:00,897 [MainThread  ] [INFO ]  Stop polling...
+2023-04-23 12:34:00,897 [MainThread  ] [WARNI]  Goodbye!
+2023-04-23 12:34:02,102 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-23 12:34:02,280 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-23 12:34:02,280 [MainThread  ] [INFO ]  Start polling.
+2023-04-23 12:35:33,429 [MainThread  ] [INFO ]  Stop polling...
+2023-04-23 12:35:33,429 [MainThread  ] [WARNI]  Goodbye!
+2023-04-23 12:35:34,598 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-23 12:35:34,768 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-23 12:35:34,768 [MainThread  ] [INFO ]  Start polling.
+2023-04-23 12:37:07,488 [MainThread  ] [INFO ]  Stop polling...
+2023-04-23 12:37:07,488 [MainThread  ] [WARNI]  Goodbye!
+2023-04-23 12:37:08,763 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-23 12:37:08,948 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-23 12:37:08,948 [MainThread  ] [INFO ]  Start polling.
+2023-04-23 12:37:33,703 [MainThread  ] [INFO ]  Stop polling...
+2023-04-23 12:37:33,704 [MainThread  ] [WARNI]  Goodbye!
+2023-04-23 12:37:34,834 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-23 12:37:35,028 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-23 12:37:35,028 [MainThread  ] [INFO ]  Start polling.
+2023-04-23 12:37:37,950 [MainThread  ] [ERROR]  Message to edit not found
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 188, in add_mark
+    return await app.edit_message_text(text, chat_id=query.message.chat.id, message_id=query.message.message_id, reply_markup=None)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 2772, in edit_message_text
+    result = await self.request(api.Methods.EDIT_MESSAGE_TEXT, payload)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageToEditNotFound: Message to edit not found
+2023-04-23 12:45:43,998 [MainThread  ] [INFO ]  Stop polling...
+2023-04-23 12:45:43,998 [MainThread  ] [WARNI]  Goodbye!
+2023-04-23 12:45:45,495 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-23 12:45:45,746 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-23 12:45:45,746 [MainThread  ] [INFO ]  Start polling.
+2023-04-23 12:45:51,168 [MainThread  ] [INFO ]  Stop polling...
+2023-04-23 12:45:51,169 [MainThread  ] [WARNI]  Goodbye!
+2023-04-23 12:45:59,622 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-23 12:45:59,787 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-23 12:45:59,788 [MainThread  ] [INFO ]  Start polling.
+2023-04-23 12:46:04,441 [MainThread  ] [ERROR]  Message to edit not found
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 203, in add_mark
+    return await app.edit_message_text(text, chat_id=query.message.chat.id, message_id=query.message.message_id, reply_markup=None)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 2772, in edit_message_text
+    result = await self.request(api.Methods.EDIT_MESSAGE_TEXT, payload)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageToEditNotFound: Message to edit not found
+2023-04-23 12:46:04,548 [MainThread  ] [ERROR]  Task exception was never retrieved
+future: <Task finished name='Task-12' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=MessageToEditNotFound('Message to edit not found')>
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 203, in add_mark
+    return await app.edit_message_text(text, chat_id=query.message.chat.id, message_id=query.message.message_id, reply_markup=None)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 2772, in edit_message_text
+    result = await self.request(api.Methods.EDIT_MESSAGE_TEXT, payload)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageToEditNotFound: Message to edit not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\essentials.py", line 20, in edit_message
+    return await self.app.edit_message_text(text=text, chat_id=chat_id, message_id=message_id, reply_markup=reply_markup, **options)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 2772, in edit_message_text
+    result = await self.request(api.Methods.EDIT_MESSAGE_TEXT, payload)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageToEditNotFound: Message to edit not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 214, in add_mark
+    return await es.edit_message(text=text, chat_id=query.message.chat.id, message_id=query.message.message_id, reply_markup=kb)
+  File "D:\PythonProjects\BibintoCloneBot\essentials.py", line 22, in edit_message
+    return await self.app.edit_message_caption(caption=text, chat_id=chat_id, message_id=message_id, reply_markup=reply_markup, **options)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 2824, in edit_message_caption
+    result = await self.request(api.Methods.EDIT_MESSAGE_CAPTION, payload)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageToEditNotFound: Message to edit not found
+2023-04-23 12:46:52,890 [MainThread  ] [INFO ]  Stop polling...
+2023-04-23 12:46:52,890 [MainThread  ] [WARNI]  Goodbye!
+2023-04-23 12:46:53,965 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-23 12:46:54,146 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-23 12:46:54,146 [MainThread  ] [INFO ]  Start polling.
+2023-04-23 12:46:56,890 [MainThread  ] [ERROR]  Message to edit not found
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\essentials.py", line 20, in edit_message
+    return await self.app.edit_message_text(text=text, chat_id=chat_id, message_id=message_id, reply_markup=reply_markup, **options)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 2772, in edit_message_text
+    result = await self.request(api.Methods.EDIT_MESSAGE_TEXT, payload)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageToEditNotFound: Message to edit not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 204, in add_mark
+    return await es.edit_message(text=text, chat_id=query.message.chat.id, message_id=query.message.message_id, reply_markup=None)
+  File "D:\PythonProjects\BibintoCloneBot\essentials.py", line 22, in edit_message
+    return await self.app.edit_message_caption(caption=text, chat_id=chat_id, message_id=message_id, reply_markup=reply_markup, **options)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 2824, in edit_message_caption
+    result = await self.request(api.Methods.EDIT_MESSAGE_CAPTION, payload)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageToEditNotFound: Message to edit not found
+2023-04-23 12:46:56,989 [MainThread  ] [ERROR]  Task exception was never retrieved
+future: <Task finished name='Task-12' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=MessageToEditNotFound('Message to edit not found')>
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\essentials.py", line 20, in edit_message
+    return await self.app.edit_message_text(text=text, chat_id=chat_id, message_id=message_id, reply_markup=reply_markup, **options)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 2772, in edit_message_text
+    result = await self.request(api.Methods.EDIT_MESSAGE_TEXT, payload)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageToEditNotFound: Message to edit not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 204, in add_mark
+    return await es.edit_message(text=text, chat_id=query.message.chat.id, message_id=query.message.message_id, reply_markup=None)
+  File "D:\PythonProjects\BibintoCloneBot\essentials.py", line 22, in edit_message
+    return await self.app.edit_message_caption(caption=text, chat_id=chat_id, message_id=message_id, reply_markup=reply_markup, **options)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 2824, in edit_message_caption
+    result = await self.request(api.Methods.EDIT_MESSAGE_CAPTION, payload)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageToEditNotFound: Message to edit not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\essentials.py", line 20, in edit_message
+    return await self.app.edit_message_text(text=text, chat_id=chat_id, message_id=message_id, reply_markup=reply_markup, **options)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 2772, in edit_message_text
+    result = await self.request(api.Methods.EDIT_MESSAGE_TEXT, payload)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageToEditNotFound: Message to edit not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 215, in add_mark
+    return await es.edit_message(text=text, chat_id=query.message.chat.id, message_id=query.message.message_id, reply_markup=kb)
+  File "D:\PythonProjects\BibintoCloneBot\essentials.py", line 22, in edit_message
+    return await self.app.edit_message_caption(caption=text, chat_id=chat_id, message_id=message_id, reply_markup=reply_markup, **options)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 2824, in edit_message_caption
+    result = await self.request(api.Methods.EDIT_MESSAGE_CAPTION, payload)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageToEditNotFound: Message to edit not found
+2023-04-23 12:47:57,879 [MainThread  ] [INFO ]  Stop polling...
+2023-04-23 12:47:57,879 [MainThread  ] [WARNI]  Goodbye!
+2023-04-23 12:47:59,055 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-23 12:47:59,222 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-23 12:47:59,222 [MainThread  ] [INFO ]  Start polling.
+2023-04-23 12:49:18,457 [MainThread  ] [INFO ]  Stop polling...
+2023-04-23 12:49:18,457 [MainThread  ] [WARNI]  Goodbye!
+2023-04-23 12:49:19,851 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-23 12:49:20,039 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-23 12:49:20,039 [MainThread  ] [INFO ]  Start polling.
+2023-04-23 12:49:44,474 [MainThread  ] [INFO ]  Stop polling...
+2023-04-23 12:49:44,474 [MainThread  ] [WARNI]  Goodbye!
+2023-04-23 12:49:45,655 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-23 12:49:45,837 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-23 12:49:45,837 [MainThread  ] [INFO ]  Start polling.
+2023-04-23 15:08:34,835 [MainThread  ] [INFO ]  Stop polling...
+2023-04-23 15:08:34,836 [MainThread  ] [WARNI]  Goodbye!
+2023-04-23 21:43:32,347 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-23 21:43:32,667 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-23 21:43:32,668 [MainThread  ] [INFO ]  Start polling.
+2023-04-23 21:43:38,496 [MainThread  ] [INFO ]  Stop polling...
+2023-04-23 21:43:38,496 [MainThread  ] [WARNI]  Goodbye!
+2023-04-23 21:44:07,915 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-23 21:44:08,104 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-23 21:44:08,104 [MainThread  ] [INFO ]  Start polling.
+2023-04-23 21:44:09,400 [MainThread  ] [INFO ]  Stop polling...
+2023-04-23 21:44:09,400 [MainThread  ] [WARNI]  Goodbye!
+2023-04-23 21:45:21,117 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-23 21:45:21,323 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-23 21:45:21,323 [MainThread  ] [INFO ]  Start polling.
+2023-04-23 21:45:24,036 [MainThread  ] [INFO ]  Stop polling...
+2023-04-23 21:45:24,036 [MainThread  ] [WARNI]  Goodbye!
+2023-04-23 21:45:25,223 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-23 21:45:25,434 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-23 21:45:25,435 [MainThread  ] [INFO ]  Start polling.
+2023-04-23 21:45:32,557 [MainThread  ] [INFO ]  Stop polling...
+2023-04-23 21:45:32,558 [MainThread  ] [WARNI]  Goodbye!
+2023-04-23 21:45:33,692 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-23 21:45:33,706 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-23 21:45:33,706 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-23 21:45:33,918 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-23 21:45:33,918 [MainThread  ] [INFO ]  Start polling.
+2023-04-23 21:46:20,187 [MainThread  ] [INFO ]  Stop polling...
+2023-04-23 21:46:20,187 [MainThread  ] [WARNI]  Goodbye!
+2023-04-23 21:46:21,297 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-23 21:46:21,316 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-23 21:46:21,316 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-23 21:46:21,502 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-23 21:46:21,502 [MainThread  ] [INFO ]  Start polling.
+2023-04-23 21:46:41,554 [MainThread  ] [INFO ]  Stop polling...
+2023-04-23 21:46:41,554 [MainThread  ] [WARNI]  Goodbye!
+2023-04-23 21:46:42,574 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-23 21:46:42,590 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-23 21:46:42,590 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-23 21:46:42,748 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-23 21:46:42,748 [MainThread  ] [INFO ]  Start polling.
+2023-04-23 21:46:56,111 [MainThread  ] [INFO ]  Stop polling...
+2023-04-23 21:46:56,111 [MainThread  ] [WARNI]  Goodbye!
+2023-04-23 21:46:57,273 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-23 21:46:57,286 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-23 21:46:57,286 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-23 21:46:57,457 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-23 21:46:57,457 [MainThread  ] [INFO ]  Start polling.
+2023-04-23 21:47:24,171 [MainThread  ] [INFO ]  Stop polling...
+2023-04-23 21:47:24,171 [MainThread  ] [WARNI]  Goodbye!
+2023-04-23 21:47:25,429 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-23 21:47:25,444 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-23 21:47:25,444 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-23 21:47:25,642 [MainThread  ] [ERROR]  Chat not found
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\checkers.py", line 79, in on_start
+    await self.app.send_message(user.id, text)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 341, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.ChatNotFound: Chat not found
+2023-04-23 21:47:25,678 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-23 21:47:25,678 [MainThread  ] [INFO ]  Start polling.
+2023-04-23 21:47:35,351 [MainThread  ] [INFO ]  Stop polling...
+2023-04-23 21:47:35,351 [MainThread  ] [WARNI]  Goodbye!
+2023-04-23 21:47:36,465 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-23 21:47:36,480 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-23 21:47:36,480 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-23 21:47:36,638 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-23 21:47:36,638 [MainThread  ] [INFO ]  Start polling.
+2023-04-23 21:48:31,062 [MainThread  ] [INFO ]  Stop polling...
+2023-04-23 21:48:31,063 [MainThread  ] [WARNI]  Goodbye!
+2023-04-23 21:48:32,253 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-23 21:48:32,268 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-23 21:48:32,268 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-23 21:48:32,456 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-23 21:48:32,456 [MainThread  ] [INFO ]  Start polling.
+2023-04-23 21:49:07,766 [MainThread  ] [INFO ]  Stop polling...
+2023-04-23 21:49:07,766 [MainThread  ] [WARNI]  Goodbye!
+2023-04-23 21:49:14,881 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-23 21:49:14,895 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-23 21:49:14,895 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-23 21:49:15,067 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-23 21:49:15,067 [MainThread  ] [INFO ]  Start polling.
+2023-04-23 21:49:51,909 [MainThread  ] [ERROR]  profile_menu() missing 1 required positional argument: 'user_id'
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 99, in view_profile
+    kb = kbs.profile_menu()
+TypeError: profile_menu() missing 1 required positional argument: 'user_id'
+2023-04-23 21:49:51,964 [MainThread  ] [ERROR]  Task exception was never retrieved
+future: <Task finished name='Task-13' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=BadRequest("Can't parse reply keyboard markup json object")>
+Traceback (most recent call last):
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 99, in view_profile
+    kb = kbs.profile_menu()
+TypeError: profile_menu() missing 1 required positional argument: 'user_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "D:\PythonProjects\BibintoCloneBot\main.py", line 106, in view_profile
+    return await es.send_message(message.chat.id, text, reply_markup=kbs)
+  File "D:\PythonProjects\BibintoCloneBot\essentials.py", line 16, in send_message
+    return await self.app.send_message(chat_id=chat_id, text=text, reply_markup=reply_markup, **options)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 341, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse reply keyboard markup json object
+2023-04-23 21:50:26,017 [MainThread  ] [INFO ]  Stop polling...
+2023-04-23 21:50:26,017 [MainThread  ] [WARNI]  Goodbye!
+2023-04-23 21:50:27,096 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-23 21:50:27,111 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-23 21:50:27,111 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-23 21:50:27,303 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-23 21:50:27,303 [MainThread  ] [INFO ]  Start polling.
+2023-04-23 21:51:09,100 [MainThread  ] [INFO ]  Stop polling...
+2023-04-23 21:51:09,100 [MainThread  ] [WARNI]  Goodbye!
+2023-04-23 21:51:10,317 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-23 21:51:10,331 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-23 21:51:10,331 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-23 21:51:10,529 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-23 21:51:10,529 [MainThread  ] [INFO ]  Start polling.
+2023-04-23 21:51:14,500 [MainThread  ] [INFO ]  Stop polling...
+2023-04-23 21:51:14,500 [MainThread  ] [WARNI]  Goodbye!

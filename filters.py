@@ -30,5 +30,8 @@ class Filters:
     def isPublicMessage(self):
         return lambda message: message.chat.type != "private"
 
+    def text(self, text_string: str):
+        return lambda message: message.text == text_string
+
 
 
