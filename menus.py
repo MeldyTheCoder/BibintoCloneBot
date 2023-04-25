@@ -32,26 +32,28 @@ class BaseMenu:
     def get_keyboard(self, **options):
         return self.reply_markup(**options)
 
-    async def send(self, chat_id: int):
+    async def send(self, chat_id: int, photo: str = None):
         try:
-            return await self.__es.send_message(chat_id, self.text, reply_markup=self.keyboard)
+            if not photo:
+                return await self.__es.send_message(chat_id, self.text, reply_markup=self.keyboard)
+            return await self.__app.send_photo(chat_id, photo=photo, caption=self.text, reply_markup=self.keyboard)
+
         except Exception as e:
             debugger.exception(e)
 
     async def reply(self, chat_id: int, message_id: int):
         pass
 
-    async def edit(self, chat_id: int, message_id: int):
+    async def edit(self, chat_id: int, message_id: int, photo: str = None):
         try:
+            if photo:
+                await self.__app.delete_message(chat_id, message_id)
+                return await self.send(chat_id, photo)
+
             return await self.__es.edit_message(chat_id, message_id, self.text, reply_markup=self.keyboard)
         except Exception as e:
             debugger.exception(e)
 
-    async def send_with_photo(self, chat_id: int, photo: str):
-        try:
-            return await self.__app.send_photo(chat_id, photo=photo, caption=self.text, reply_markup=self.keyboard)
-        except Exception as e:
-            debugger.exception(e)
 
 
 class ProfileMenu(BaseMenu):
@@ -72,13 +74,13 @@ class ProfileMenu(BaseMenu):
     def format_menu(self):
         user: UserModel = self.options['user']
         likes: list[LikeModel] = self.options['likes']
-        likes_incoming: list[LikeModel] = list(filter(lambda like: like and like.from_user.id == user.id, likes))
-        likes_outgoing: list[LikeModel] = list(filter(lambda like: like and like.to_user.id == user.id, likes))
+        likes_incoming: list[LikeModel] = list(filter(lambda like: like and like.to_user.id == user.id, likes))
+        likes_outgoing: list[LikeModel] = list(filter(lambda like: like and like.from_user.id == user.id, likes))
 
         data = {
             'user_name': user.name.first_name,
-            'city': user.city.city if user.city else 'город не указан',
-            'likes_avg': sum([like.mark for like in likes_incoming]) / max(config.TOTAL_MARKS) if likes else 0,
+            'city': user.city.city if user.city.city else 'город не указан',
+            'likes_avg': sum([like.mark for like in likes_incoming]) / max(config.TOTAL_MARKS) if likes_incoming else 0,
             'max_mark': max(config.TOTAL_MARKS),
             'gender': user.gender.title,
             'likes_outgoing': len(likes_outgoing),
@@ -106,11 +108,21 @@ class UserMarkMenu(BaseMenu):
 
         data = {
             'user_name': user.name.first_name,
-            'city': user.city.city if user.city else 'город не указан',
+            'city': user.city.city if user.city.city else 'город не указан',
             'age': user.age.years,
             'gender': user.gender.title
         }
 
         self.text = self.text.format(**data)
         self.keyboard = self.get_keyboard(user_id=user.id)
+
+class ProfileMarkMenu(BaseMenu):
+    text = """
+👤 <b>{user_name}, {city}</b>
+
+🔞 <b>Возраст</b>: <code>{age} лет</code>
+
+⭐️ <b>Оценка</b>: <code>{mark}</code>
+"""
+    reply_markup = lambda user_id: kbs
 

@@ -72,10 +72,9 @@ async def start_marking(message: types.Message):
             text = '⛔️ <b>Похоже, что анкеты закончились...</b>\n\nНе переживайте, скоро появятся новые)'
             return await message.answer(text)
 
-        text = f'👤 <b>{user_data.name.first_name}, {user_data.city}</b>\n\n<b>Возраст</b>: <code>{user_data.age.years} лет</code>'
+        menu = UserMarkMenu(app, dp, user=user)
         photo = user_data.photo
-        kb = kbs.user_menu(user_data.id)
-        return await app.send_photo(message.chat.id, photo, caption=text, reply_markup=kb)
+        return await menu.send(message.chat.id, photo)
 
     except Exception as e:
         debugger.exception(e)
@@ -83,6 +82,22 @@ async def start_marking(message: types.Message):
         kb = kbs.back_to('main_menu')
         return await es.send_message(message.chat.id, text, reply_markup=kb)
 
+
+@dp.callback_query_handler(filters.query('profile'), filters.isPrivateQuery(), filters.userRegisteredQuery())
+async def view_profile(query: types.CallbackQuery):
+    try:
+        user = db.get_user(user_id=query.message.chat.id)
+        likes = db.get_likes()
+
+        menu = ProfileMenu(app, dp, user=user, likes=likes)
+        photo = user.photo
+        await menu.edit(query.message.chat.id, query.message.message_id, photo)
+
+    except Exception as e:
+        debugger.exception(e)
+        text = '🚫 <b>Произошла неизвестная ошибка</b>\n\nПовторите попытку позднее.'
+        kb = kbs.back_to('main_menu')
+        return await es.edit_message(query.message.chat.id, query.message.message_id, text, reply_markup=kb)
 
 @dp.message_handler(filters.text('👤 Профиль'), filters.isPrivateMessage(), filters.userRegisteredMessage(), content_types=['text'])
 async def view_profile(message: types.Message):
@@ -92,13 +107,20 @@ async def view_profile(message: types.Message):
 
         menu = ProfileMenu(app, dp, user=user, likes=likes)
         photo = user.photo
-        await menu.send_with_photo(message.chat.id, photo)
+        await menu.send(message.chat.id, photo)
 
     except Exception as e:
         debugger.exception(e)
         text = '🚫 <b>Произошла неизвестная ошибка</b>\n\nПовторите попытку позднее.'
         kb = kbs.back_to('main_menu')
         return await es.send_message(message.chat.id, text, reply_markup=kb)
+@dp.callback_query_handler(filters.query('profile_marks'), filters.isPrivateQuery(), filters.userRegisteredQuery())
+async def profile_marks(query: types.CallbackQuery):
+    try:
+        likes = db.get_likes_by_time()
+
+    except Exception as e:
+        debugger.exception(e)
 
 @dp.message_handler(filters.isPrivateMessage(), filters.userNotRegisteredMessage(), content_types=['text'], state=Registration)
 async def registration(message: types.Message, state: FSMContext):
@@ -237,10 +259,9 @@ async def add_mark(query: types.CallbackQuery):
             kb = kbs.back_to('main_menu')
             return await es.send_message(text=text, chat_id=query.message.chat.id, reply_markup=kb)
 
-        text = f'👤 <b>{user_data.name.first_name}, {user_data.city}</b>\n\n<b>Возраст</b>: <code>{user_data.age.years} лет</code>'
+        menu = UserMarkMenu(app, dp, user=user_data)
         photo = user_data.photo
-        kb = kbs.user_menu(user_data.id)
-        return await app.send_photo(chat_id=query.message.chat.id, photo=photo, caption=text, reply_markup=kb)
+        return await menu.send(query.message.chat.id, photo)
 
     except Exception as e:
         debugger.exception(e)

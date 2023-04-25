@@ -208,3 +208,107 @@ TypeError: <lambda>() got multiple values for argument 'user_id'
 2023-04-25 01:58:40,175 [MainThread  ] [INFO ]  All checkers have been started!
 2023-04-25 01:58:40,327 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
 2023-04-25 01:58:40,328 [MainThread  ] [INFO ]  Start polling.
+2023-04-25 16:14:59,297 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-25 16:14:59,372 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-25 16:14:59,373 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-25 16:15:01,773 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-25 16:15:01,773 [MainThread  ] [INFO ]  Start polling.
+2023-04-25 16:15:13,562 [MainThread  ] [ERROR]  'ProfileMenu' object has no attribute 'send_with_photo'
+Traceback (most recent call last):
+  File "C:\Users\coolg\PycharmProjects\BibintoCloneBot\main.py", line 111, in view_profile
+    await menu.send_with_photo(message.chat.id, photo)
+          ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ProfileMenu' object has no attribute 'send_with_photo'
+2023-04-25 16:15:24,328 [MainThread  ] [INFO ]  Stop polling...
+2023-04-25 16:15:24,330 [MainThread  ] [WARNI]  Goodbye!
+2023-04-25 16:15:27,195 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-25 16:15:27,231 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-25 16:15:27,232 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-25 16:15:27,455 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-25 16:15:27,455 [MainThread  ] [INFO ]  Start polling.
+2023-04-25 16:18:33,721 [MainThread  ] [INFO ]  Stop polling...
+2023-04-25 16:18:33,721 [MainThread  ] [WARNI]  Goodbye!
+2023-04-25 16:18:39,242 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-25 16:18:39,281 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-25 16:18:39,281 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-25 16:18:39,469 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-25 16:18:39,469 [MainThread  ] [INFO ]  Start polling.
+2023-04-25 16:18:39,657 [MainThread  ] [ERROR]  Can't parse entities: unsupported start tag "database.database" at byte offset 83
+Traceback (most recent call last):
+  File "C:\Users\coolg\PycharmProjects\BibintoCloneBot\main.py", line 78, in start_marking
+    return await app.send_photo(message.chat.id, photo, caption=text, reply_markup=kb)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\bot.py", line 565, in send_photo
+    result = await self.request(api.Methods.SEND_PHOTO, payload, files)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\coolg\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: unsupported start tag "database.database" at byte offset 83
+2023-04-25 16:19:00,735 [MainThread  ] [INFO ]  Stop polling...
+2023-04-25 16:19:00,736 [MainThread  ] [WARNI]  Goodbye!
+2023-04-25 16:19:03,410 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-25 16:19:03,457 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-25 16:19:03,457 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-25 16:19:04,280 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-25 16:19:04,280 [MainThread  ] [INFO ]  Start polling.
+2023-04-25 16:24:07,823 [MainThread  ] [INFO ]  Stop polling...
+2023-04-25 16:24:07,825 [MainThread  ] [WARNI]  Goodbye!
+2023-04-25 16:24:10,190 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-25 16:24:10,224 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-25 16:24:10,224 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-25 16:24:10,470 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-25 16:24:10,471 [MainThread  ] [INFO ]  Start polling.
+2023-04-25 16:25:29,602 [MainThread  ] [INFO ]  Stop polling...
+2023-04-25 16:25:29,603 [MainThread  ] [WARNI]  Goodbye!
+2023-04-25 16:25:32,164 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-25 16:25:32,198 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-25 16:25:32,198 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-25 16:25:32,410 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-25 16:25:32,410 [MainThread  ] [INFO ]  Start polling.
+2023-04-25 16:27:37,146 [MainThread  ] [INFO ]  Stop polling...
+2023-04-25 16:27:37,147 [MainThread  ] [WARNI]  Goodbye!
+2023-04-25 16:27:39,479 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-25 16:27:39,519 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-25 16:27:39,519 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-25 16:27:40,057 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-25 16:27:40,057 [MainThread  ] [INFO ]  Start polling.
+2023-04-25 16:27:48,377 [MainThread  ] [ERROR]  BaseMenu.send() takes from 2 to 3 positional arguments but 4 were given
+Traceback (most recent call last):
+  File "C:\Users\coolg\PycharmProjects\BibintoCloneBot\menus.py", line 51, in edit
+    return await self.send(chat_id, message_id, photo)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BaseMenu.send() takes from 2 to 3 positional arguments but 4 were given
+2023-04-25 16:27:57,981 [MainThread  ] [INFO ]  Stop polling...
+2023-04-25 16:27:57,983 [MainThread  ] [WARNI]  Goodbye!
+2023-04-25 16:28:00,304 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-25 16:28:08,484 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-25 16:28:15,429 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-25 16:28:20,971 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-25 16:28:21,015 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-25 16:28:21,015 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-25 16:28:21,223 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-25 16:28:21,225 [MainThread  ] [INFO ]  Start polling.
+2023-04-25 16:29:50,948 [MainThread  ] [INFO ]  Stop polling...
+2023-04-25 16:29:50,949 [MainThread  ] [WARNI]  Goodbye!
+2023-04-25 16:29:56,901 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-25 16:29:56,950 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-25 16:29:56,950 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-25 16:29:57,193 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-25 16:29:57,194 [MainThread  ] [INFO ]  Start polling.
+2023-04-25 16:30:25,010 [MainThread  ] [INFO ]  Stop polling...
+2023-04-25 16:30:25,012 [MainThread  ] [WARNI]  Goodbye!
+2023-04-25 16:30:32,123 [MainThread  ] [INFO ]  ========= STARTED =========
+2023-04-25 16:30:32,165 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
+2023-04-25 16:30:32,165 [MainThread  ] [INFO ]  All checkers have been started!
+2023-04-25 16:30:32,383 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
+2023-04-25 16:30:32,384 [MainThread  ] [INFO ]  Start polling.
+2023-04-25 16:31:00,056 [MainThread  ] [INFO ]  Stop polling...
+2023-04-25 16:31:00,058 [MainThread  ] [WARNI]  Goodbye!
