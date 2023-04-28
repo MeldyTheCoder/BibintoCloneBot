@@ -124,5 +124,20 @@ class ProfileMarkMenu(BaseMenu):
 
 ⭐️ <b>Оценка</b>: <code>{mark}</code>
 """
-    reply_markup = lambda user_id: kbs
+    reply_markup = lambda user_id: kbs.view_marks()
+
+    def format_menu(self):
+        like: LikeModel = self.options['like']
+
+        city = like.from_user.city.city
+
+        data = {
+            "user_name": like.from_user.name.first_name,
+            "city": city if city else 'город не указан',
+            "age": like.from_user.age.years,
+            "mark": like.mark
+        }
+
+        self.text = self.text.format(**data)
+        self.keyboard = self.get_keyboard()
 

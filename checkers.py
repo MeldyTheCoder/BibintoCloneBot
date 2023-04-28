@@ -10,10 +10,10 @@ from keyboards import Keyboards
 from typing import Union
 from aiogram import Bot
 
-
 tm = TimeManager()
 kbs = Keyboards()
 debugger = Debug()
+
 
 class BaseChecker:
     name = "BaseChecker"
@@ -65,12 +65,10 @@ class IncomingMarksChecker(BaseChecker):
 
         user_text = '⭐️ <b>Вас оценили</b> <code>{marks} человек</code>!.\n\nПосмотреть Ваши оценки можно в разделе <code>👤 Профиль</code>.'
         while self.loop.is_running():
-            now = tm.get_now().timestamp()
-            from_time = now - self.loop_cooldown
             try:
                 users = self.db.get_users()
                 for user in users:
-                    marks = self.db.get_likes_by_time(from_time=from_time, to_time=now, to_user=user.id)
+                    marks = self.db.get_likes(to_user=user.id, viewed=0)
                     if not marks:
                         continue
 

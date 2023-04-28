@@ -208,6 +208,8 @@ TypeError: <lambda>() got multiple values for argument 'user_id'
 2023-04-25 01:58:40,175 [MainThread  ] [INFO ]  All checkers have been started!
 2023-04-25 01:58:40,327 [MainThread  ] [INFO ]  Bot: TestBibinto [@bibintoclone_bot]
 2023-04-25 01:58:40,328 [MainThread  ] [INFO ]  Start polling.
+2023-04-25 02:00:23,144 [MainThread  ] [INFO ]  Stop polling...
+2023-04-25 02:00:23,144 [MainThread  ] [WARNI]  Goodbye!
 2023-04-25 16:14:59,297 [MainThread  ] [INFO ]  ========= STARTED =========
 2023-04-25 16:14:59,372 [MainThread  ] [INFO ]  IncomingMarksChecker has been started!
 2023-04-25 16:14:59,373 [MainThread  ] [INFO ]  All checkers have been started!

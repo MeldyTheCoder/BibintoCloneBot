@@ -62,6 +62,11 @@ class Database:
         if not options:
             raise models.exceptions.NoOptionsPassed()
 
+        if 'city' in options:
+            options['city'] = self.get_city(city=options['city']).id
+
+        options['register_date'] = tm.get_now().timestamp()
+
         for key, val in options.items():
             args_str.append(f"{key}")
             args.append(val)
@@ -190,7 +195,7 @@ class Database:
         self.cursor.execute(query, args)
         data = self.cursor.fetchone()
         if data:
-            return LikeModel(self.adapter, **data)
+            return GenderModel(self.adapter, **data)
         return {}
 
     def get_city(self, **options):
@@ -236,3 +241,15 @@ class Database:
 
         self.cursor.execute(query, args)
         return [GenderModel(self.adapter, **data) for data in self.cursor.fetchall() if data]
+
+    def search_city(self, search_query: str):
+        query = 'SELECT * FROM cities WHERE city LIKE ? OR country LIKE ?'
+        args = [f"%{search_query}%", f"%{search_query}%"]
+        self.cursor.execute(query, args)
+        return [CityModel(self.adapter, **city) for city in self.cursor.fetchall()]
+
+    def search_gender(self, search_query: str):
+        query = 'SELECT * FROM genders WHERE code LIKE ? OR title LIKE ?'
+        args = [f"%{search_query}%", f"%{search_query}%"]
+        self.cursor.execute(query, args)
+        return [GenderModel(self.adapter, **gender) for gender in self.cursor.fetchall()]

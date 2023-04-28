@@ -12,6 +12,7 @@ class LikeModel(BaseModel):
     __to_user: int = 0
     __from_user: int = 0
     __date: int = 0
+    __viewed: int = 0
 
     @property
     def id(self) -> int:
@@ -41,6 +42,10 @@ class LikeModel(BaseModel):
             return tm.from_timestamp(self.__date)
         self.__date = tm.get_now().timestamp()
         return tm.get_now()
+
+    @property
+    def is_viewed(self):
+        return bool(self.__viewed)
 
 
 

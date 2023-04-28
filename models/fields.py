@@ -1,6 +1,8 @@
+import json
 import models.exceptions
 from models.repr import ReprModel
 from typing import Optional, Union, Iterable
+from abc import abstractproperty
 
 class BaseTextField(ReprModel):
     TYPES = {'int': int, 'str': str, 'float': float}
@@ -56,6 +58,30 @@ class BaseMediaField(ReprModel):
             return self.text_field.is_valid(data)
 
         return True
+
+class CallbackQueryField(ReprModel):
+    required_arguments: dict[str, type] = {'action': str}
+
+    def __init__(self, returns_key: str, **options: type):
+        self.options: dict[str, type] = options
+        self.returns_key: str = returns_key
+        self.required_arguments.update(self.options)
+
+
+    def is_valid(self, query_data: dict[str, Union[int, str]]) -> bool:
+        for key, val in self.required_arguments.items():
+            if key not in query_data:
+                return False
+
+            if type(query_data[key]) is not val:
+                return False
+
+        return True
+
+    def output(self, query_data: dict[str, Union[int, str]]) -> Optional[Union[str, int]]:
+        if self.is_valid(query_data):
+            return query_data[self.returns_key]
+        return None
 
 
 class PhotoField(BaseMediaField):

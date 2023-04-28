@@ -14,25 +14,43 @@ class BaseBotException(Exception):
 
 
 class NoOptionsPassed(BaseBotException):
+
+    @property
     def message(self) -> str:
         return 'No options passed!'
 
 class NoSuchOption(BaseBotException):
+
+    @property
     def message(self) -> str:
         return 'No such option %{option}!'
 
 class NoSuchGender(BaseBotException):
+
+    @property
     def message(self) -> str:
         return "No such gender %{gender}!"
 
 class NotSupportedFieldType(BaseBotException):
+
+    @property
     def message(self) -> str:
         return 'Not supported field type %{type}'
 
 class InvalidFieldData(BaseBotException):
+
+    @property
     def message(self) -> str:
         return 'Invalid data for field type %{type}'
 
 class DatabaseNoargumentsPassed(BaseBotException):
+
+    @property
     def message(self) -> str:
         return 'No arguments passed!'
+
+class NotSupportedField(BaseBotException):
+
+    @property
+    def message(self) -> str:
+        return 'Not supported field %{field_name}'

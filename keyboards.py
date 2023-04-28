@@ -2,6 +2,8 @@ import json
 import config
 from aiogram import types
 
+from models.gender import GenderModel
+
 
 class Keyboards:
     def __init__(self):
@@ -56,11 +58,16 @@ class Keyboards:
         kb.add(types.InlineKeyboardButton("↪️ Назад", callback_data=json.dumps({'action': back_to_action})))
         return kb
 
-    def choose_gender(self, back_to_action: str = 'main_menu'):
+    def choose_gender(self, genders: list[GenderModel], back_to_action: str = 'main_menu'):
         kb = types.InlineKeyboardMarkup()
-        kb.add(types.InlineKeyboardButton("☦️ Выбрать пол", switch_inline_query_current_chat=config.SEARCH_GENDER_INLINE_QUERY))
+        btns = [types.InlineKeyboardButton(f"👧🏿 {gender.title}", callback_data=json.dumps({'action': 'registration_gender', 'id': gender.id})) for gender in genders]
+        kb.add(*btns)
         kb.add(types.InlineKeyboardButton("↪️ Назад", callback_data=json.dumps({'action': back_to_action})))
         return kb
 
-
+    def view_marks(self):
+        kb = types.InlineKeyboardMarkup()
+        kb.add(types.InlineKeyboardButton('▶️ Следующая оценка', callback_data=json.dumps({'action': 'profile_marks'})))
+        kb.add(types.InlineKeyboardButton("Назад", callback_data=json.dumps({'action': 'main_menu'})))
+        return kb
 
