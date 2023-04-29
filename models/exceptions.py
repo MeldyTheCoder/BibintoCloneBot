@@ -54,3 +54,9 @@ class NotSupportedField(BaseBotException):
     @property
     def message(self) -> str:
         return 'Not supported field %{field_name}'
+
+class CityNotFoundError(BaseBotException):
+
+    @property
+    def message(self) -> str:
+        return 'No such city %{city}'

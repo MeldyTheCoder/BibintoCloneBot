@@ -9,7 +9,6 @@ from debug import Debug
 from essentials import Essentials
 from checkers import CheckerExecutor
 from menus import ProfileMenu, UserMarkMenu, ProfileMarkMenu
-from typing import Union
 from models.fields import BaseMediaField, BaseTextField, CallbackQueryField
 from aiogram import Bot, types, executor, Dispatcher
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
@@ -41,8 +40,13 @@ async def start_unregistered(message: types.Message):
     text = Registration.texts[await Registration().get_state_short_name(state=state)][0]
     return await app.send_message(message.chat.id, text)
 
-@dp.callback_query_handler(filters.query('main_menu'), filters.userRegisteredQuery(), filters.isPrivateQuery())
+@dp.callback_query_handler(filters.query('main_menu'), filters.userRegisteredQuery(), filters.isPrivateQuery(), state='*')
 async def main_menu(query: types.CallbackQuery):
+    try:
+        await dp.current_state().finish()
+    except:
+        pass
+
     try:
         text = f'❕ <b>Вы вернулись в главное меню.</b>'
         kb = kbs.main_keyboard()
@@ -72,7 +76,7 @@ async def start_marking(message: types.Message):
             text = '⛔️ <b>Похоже, что анкеты закончились...</b>\n\nНе переживайте, скоро появятся новые)'
             return await message.answer(text)
 
-        menu = UserMarkMenu(app, dp, user=user)
+        menu = UserMarkMenu(app, dp, user=user_data)
         photo = user_data.photo
         return await menu.send(message.chat.id, photo)
 
@@ -83,8 +87,13 @@ async def start_marking(message: types.Message):
         return await es.send_message(message.chat.id, text, reply_markup=kb)
 
 
-@dp.callback_query_handler(filters.query('profile'), filters.isPrivateQuery(), filters.userRegisteredQuery())
+@dp.callback_query_handler(filters.query('profile'), filters.isPrivateQuery(), filters.userRegisteredQuery(), state='*')
 async def view_profile(query: types.CallbackQuery):
+    try:
+        await dp.current_state().finish()
+    except:
+        pass
+
     try:
         user = db.get_user(user_id=query.message.chat.id)
         likes = db.get_likes()
@@ -138,6 +147,31 @@ async def profile_marks(message: types.Message):
     except Exception as e:
         debugger.exception(e)
 
+@dp.message_handler(filters.text('ℹ️ О нас'), filters.isPrivateMessage(), filters.userRegisteredMessage())
+async def bot_info(message: types.Message):
+    users = db.get_users()
+    likes = db.get_likes()
+
+    photo_url = "https://media.discordapp.net/attachments/1022848089117163591/1099485679664255036/logo4.png"
+
+    text = f"""
+🥸 <b>Гомоценка</b>
+└ <i>Бот для ловли педофилов. Ну ваще это каловая масса на 1500 строк на Python. Это шняга сделана на Python aiogram, sqlite и прочем говне. Мы старались крч. Скоро будет новый наш продукт - OnlyVSHP</i>
+
+📊 <b>Статистика</b>:
+├ 👤 Пользователей: <code>{len(users)} чел.</code>
+└ 💫 Оценок: <code>{len(likes)} шт.</code>
+
+👥 <b>Участники</b>:
+├ <b>Адик</b> - <code>главный казах в нашей тиме.</code>
+├ <b>Бандера</b> - <code>тот самый кучерявый чел справа от меня.</code>
+├ <b>Жечка</b> - <code>ну я в бордовой кофте, чел выше - обезьяна.</code>
+├ <b>Купер</b> - <code>тот самый репер с задней парты.</code>
+├ <b>Стоник</b> - <code>чел с 100% пропусков.</code>
+└ <b>Батюшка</b> - <code>смешной маркетолог.</code> 
+"""
+    kb = kbs.back_to('main_menu')
+    await app.send_photo(chat_id=message.chat.id, caption=text, photo=photo_url, reply_markup=kb)
 
 @dp.callback_query_handler(filters.query('profile_marks'), filters.isPrivateQuery(), filters.userRegisteredQuery())
 async def profile_marks(query: types.CallbackQuery):
@@ -201,10 +235,16 @@ async def registration(message: types.Message, state: FSMContext):
         kb = await Registration().get_keyboard(state_name, db=db, app=app)
         return await message.answer(text, reply_markup=kb)
 
-    except models.exceptions.InvalidFieldData:
-        text = '🚫 <b>Некорректный ввод данных!</b>\n\nПовторите ввод:'
+
+    except models.exceptions.CityNotFoundError:
+        text = '🚫 <b>Такого города не существует</b>!\n\nВведи существующий город или выбери из списка, нажав на кнопку "Выбрать город".'
         kb = kbs.back_to('main_menu')
-        return await es.send_message(message.chat.id, text, reply_markup=kb)
+        return await message.answer(text, reply_markup=kb)
+
+    except models.exceptions.InvalidFieldData:
+        text = '🚫 <b>Неверно введены данные для текущего поля</b>!\n\nВведи корректные данные:'
+        kb = kbs.back_to('main_menu')
+        return await message.answer(text, reply_markup=kb)
 
     except Exception as e:
         debugger.exception(e)
@@ -249,8 +289,67 @@ async def registration_query(query: types.CallbackQuery, state: FSMContext):
         text = '🚫 <b>Произошла неизвестная ошибка</b>\n\nПовторите попытку позднее.'
         return await es.edit_message(query.message.chat.id, query.message.message_id, text)
 
+
+@dp.callback_query_handler(filters.isPrivateQuery(), filters.userRegisteredQuery(), state=ProfileSettings)
+async def profile_settings_query(query: types.CallbackQuery, state: FSMContext):
+    try:
+        user = db.get_user(user_id=query.message.chat.id)
+
+        data = json.loads(query.data)
+        state_name = await ProfileSettings().get_state_short_name(state)
+        field = await ProfileSettings().get_field(state_name)
+
+        if not isinstance(field, CallbackQueryField):
+            raise models.exceptions.NotSupportedField(field_name=field.__class__.__name__)
+
+        if not field.is_valid(data):
+            raise models.exceptions.InvalidFieldData(type=field.__class__.__name__)
+
+        output = field.output(data)
+        state_data = {state_name: output}
+        await state.update_data(**state_data)
+
+        data = await state.get_data()
+        db.update_user(user.id, **data)
+        await state.finish()
+
+        text = await ProfileSettings().get_text(state_name, index=1)
+        kb = kbs.back_to('profile')
+        return await es.edit_message(query.message.chat.id, query.message.message_id, text, reply_markup=kb)
+
+    except Exception as e:
+        debugger.exception(e)
+        await dp.current_state().finish()
+        text = '🚫 <b>Произошла неизвестная ошибка</b>\n\nПовторите попытку позднее.'
+        return await es.edit_message(query.message.chat.id, query.message.message_id, text)
+
+
 @dp.inline_handler(state=Registration.city)
 async def registration_city(query: types.InlineQuery):
+    search_query = query.query.replace(config.SEARCH_CITY_INLINE_QUERY, '')
+    cities = db.search_city(search_query)
+    if not cities:
+        cities = db.get_cities()
+
+    cities = cities[0:50]
+
+    results = []
+    input_message_content = lambda city: types.InputTextMessageContent(f"{city.city}")
+
+    for index, city in enumerate(cities, start=1):
+        try:
+            results.append(
+                types.InlineQueryResultArticle(id=str(index), title=city.city,
+                                               description=city.country,
+                                               input_message_content=input_message_content(city)))
+        except:
+            pass
+
+    await app.answer_inline_query(query.id, results)
+
+
+@dp.inline_handler(state=ProfileSettings.city)
+async def profile_city(query: types.InlineQuery):
     search_query = query.query.replace(config.SEARCH_CITY_INLINE_QUERY, '')
     cities = db.search_city(search_query)
     if not cities:
@@ -329,15 +428,26 @@ async def change_profile(message: types.Message, state: FSMContext):
         db.update_user(user.id, **data)
 
         text = await ProfileSettings().get_text(state_name, index=1)
-        kb = await ProfileSettings().get_keyboard(state_name, db=db, app=app)
+        kb = kbs.back_to('profile')
         await state.finish()
+        return await message.answer(text, reply_markup=kb)
+
+    except models.exceptions.CityNotFoundError:
+        text = '🚫 <b>Такого города не существует</b>!\n\nВведи существующий город или выбери из списка, нажав на кнопку "Выбрать город".'
+        kb = kbs.back_to('main_menu')
+        return await message.answer(text, reply_markup=kb)
+
+    except models.exceptions.InvalidFieldData:
+        text = '🚫 <b>Неверно введены данные для текущего поля</b>!\n\nВведи корректные данные:'
+        kb = kbs.back_to('main_menu')
         return await message.answer(text, reply_markup=kb)
 
     except Exception as e:
         debugger.exception(e)
         text = '🚫 <b>Произошла неизвестная ошибка</b>\n\nПовторите попытку позднее.'
+        kb = kbs.back_to('main_menu')
         await state.finish()
-        return await message.answer(text)
+        return await message.answer(text, reply_markup=kb)
 
 @dp.callback_query_handler(filters.query("add_mark"), filters.isPrivateQuery(), filters.userRegisteredQuery())
 async def add_mark(query: types.CallbackQuery):
@@ -350,12 +460,18 @@ async def add_mark(query: types.CallbackQuery):
             to_user = likes[-1].to_user if likes else 0
             user_data = db.next_user(user.id, to_user)
         else:
-            user_data = db.next_user(user.id, data['u'])
+            user_data = db.get_user(id=data['u'])
+
+        if not user_data:
+            text = '🚫 <b>Пока что нет активных анкет(</b>\n\nСкоро появятся.'
+            kb = kbs.back_to('main_menu')
+            return await es.send_message(text=text, chat_id=query.message.chat.id, reply_markup=kb)
 
         if 'm' in data and user_data:
             db.add_like(to_user=user_data.id, from_user=user.id, mark=data['m'])
             user_data = db.next_user(user.id, user_data.id)
-            await es.delete_message(query.message.chat.id, query.message.message_id)
+
+        await es.delete_message(query.message.chat.id, query.message.message_id)
 
         if not user_data:
             text = '🚫 <b>Анкеты закончились(</b>\n\nСкоро появятся.'

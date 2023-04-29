@@ -63,7 +63,10 @@ class Database:
             raise models.exceptions.NoOptionsPassed()
 
         if 'city' in options:
-            options['city'] = self.get_city(city=options['city']).id
+            city = self.get_city(city=options['city'])
+            if not city:
+                raise models.exceptions.CityNotFoundError(city=options['city'])
+            options['city'] = city.id
 
         options['register_date'] = tm.get_now().timestamp()
 
@@ -83,6 +86,12 @@ class Database:
         if not options:
             raise models.exceptions.NoOptionsPassed()
 
+        if 'city' in options:
+            city = self.get_city(city=options['city'])
+            if not city:
+                raise models.exceptions.CityNotFoundError(city=options['city'])
+            options['city'] = city.id
+
         for key, val in options.items():
             args.append(val)
             args_str.append(f"{key} = ?")
@@ -96,15 +105,18 @@ class Database:
         options['status'] = 'active'
         users = self.get_users(**options)
         user_marks = [mark.to_user.id for mark in self.get_likes(from_user=from_user)]
-        user_ids = [user.id for user in users if user.id != from_user and not user.id in user_marks]
+        user_ids = [user.id for user in users if (user.id != from_user) and (user.id not in user_marks)]
 
         if not user_ids or not users:
             return None
 
-        if (not current_user) or (current_user not in user_ids) or (current_user == user_ids[-1]):
+        if not current_user or current_user not in user_ids:
             return self.get_user(id=user_ids[0])
 
         user = user_ids.index(current_user) + 1
+        if current_user == user_ids[-1] or current_user == user_ids[user]:
+            return None
+
         return self.get_user(id=user)
 
     def get_likes(self, **options: Union[int, str]) -> list[LikeModel]:

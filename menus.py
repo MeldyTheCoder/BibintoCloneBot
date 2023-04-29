@@ -80,7 +80,7 @@ class ProfileMenu(BaseMenu):
         data = {
             'user_name': user.name.first_name,
             'city': user.city.city if user.city.city else 'город не указан',
-            'likes_avg': sum([like.mark for like in likes_incoming]) / max(config.TOTAL_MARKS) if likes_incoming else 0,
+            'likes_avg': sum([like.mark for like in likes_incoming]) / len(likes_incoming) if likes_incoming else 0,
             'max_mark': max(config.TOTAL_MARKS),
             'gender': user.gender.title,
             'likes_outgoing': len(likes_outgoing),
@@ -124,7 +124,7 @@ class ProfileMarkMenu(BaseMenu):
 
 ⭐️ <b>Оценка</b>: <code>{mark}</code>
 """
-    reply_markup = lambda user_id: kbs.view_marks()
+    reply_markup = staticmethod(lambda: kbs.view_marks())
 
     def format_menu(self):
         like: LikeModel = self.options['like']

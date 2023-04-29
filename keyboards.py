@@ -28,9 +28,8 @@ class Keyboards:
 
         kb.add(*mark_buttons)
         kb.add(
-            types.InlineKeyboardButton("🚫 Прекратить оценивать", callback_data=json.dumps({'action': 'main_menu'})),
-            types.InlineKeyboardButton("🛑 Жалоба", callback_data=json.dumps({"action": 'add_complaint', 'u': user_id}))
-            )
+            types.InlineKeyboardButton("🛑 Стоп", callback_data=json.dumps({'action': 'main_menu'})),
+        )
 
         return kb
 
@@ -68,6 +67,6 @@ class Keyboards:
     def view_marks(self):
         kb = types.InlineKeyboardMarkup()
         kb.add(types.InlineKeyboardButton('▶️ Следующая оценка', callback_data=json.dumps({'action': 'profile_marks'})))
-        kb.add(types.InlineKeyboardButton("Назад", callback_data=json.dumps({'action': 'main_menu'})))
+        kb.add(types.InlineKeyboardButton("↪️ Назад", callback_data=json.dumps({'action': 'main_menu'})))
         return kb
 
